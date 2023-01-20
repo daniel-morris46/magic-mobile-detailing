@@ -18,6 +18,7 @@ function closeMenu() {
 }
 
 function showDropdown(dropdown) {
+    hideDropdowns();
     $('#' + dropdown).toggle();
 }
 
