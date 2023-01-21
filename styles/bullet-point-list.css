@@ -1,0 +1,17 @@
+.bullet-point-list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 1.6em;
+    gap: 20px;
+}
+
+.bullet-point-list-item {
+    min-height: 50px;
+}
+
+.bullet-point-icon {
+    padding-right: 10px;
+}

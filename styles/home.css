@@ -1,0 +1,261 @@
+.header-container {
+
+}
+
+.header-image {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    position: absolute;
+    z-index: -1;
+}
+
+.header-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 500px;
+    padding-top: 100px;
+}
+
+.primary-header-title {
+  color: white;
+  font-size: 5em;
+  font-weight: 70;
+  text-align: center;
+  width: 100%;
+}
+
+.secondary-header-title {
+  color: white;
+  font-size: 2.5em;
+  font-weight: 70;
+  text-align: center;
+  width: 100%;
+  padding-top: 10px;
+}
+
+.header-buttons {
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    column-gap: 40px;
+}
+
+.header-button-1 {
+  background-color: rgb(114, 164, 240);
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  flex-shrink: 0;
+  font-size: 16px;
+  font-weight: 500;
+  height: 4rem;
+  padding: 0 1.6rem;
+  text-align: center;
+  text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+  transition: all .5s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.header-button-1:hover {
+  box-shadow: rgba(114, 164, 240, 0.5) 0 1px 30px;
+  transition-duration: .1s;
+}
+
+.header-button-2 {
+  background-color: rgb(50, 31, 216);
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  flex-shrink: 0;
+  font-size: 16px;
+  font-weight: 500;
+  height: 4rem;
+  padding: 0 1.6rem;
+  text-align: center;
+  text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+  transition: all .5s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.header-button-2:hover {
+  box-shadow: rgba(50, 31, 216, 0.5) 0 1px 30px;
+  transition-duration: .1s;
+}
+
+.contact-container {
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: grey;
+    min-height: 150px;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.phone-container {
+    height: 100px;
+    margin: 10px;
+    padding-left: 20px;
+}
+
+.phone-text {
+    color: white;
+    font-size: 2.5em;
+
+}
+
+.phone-number-container {
+    margin-top: 10px;
+    color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.phone-icon {
+    font-size: 3em;
+}
+
+.phone-number {
+    margin-left: 15px;
+    font-size: 3em;   
+}
+
+
+.working-hours-container {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.working-hours-icon {
+    font-size: 4em;
+}
+
+.working-hours-text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.working-hours-title {
+    font-size: 2em;
+    display: block;
+}
+
+.working-hours-text {
+    display: block;
+    font-size: 1.1em;
+}
+
+.location-container {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.location-icon {
+    font-size: 4em;
+}
+
+.location-text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.location-title {
+    display: block;
+    font-size: 2em;
+}
+
+.location-text {
+    display: block;
+    font-size: 1.1em;
+}
+
+.section-heading {
+    font-size: 3em;
+    text-align: center;
+    margin: 50px;
+}
+
+.section {
+    margin: 40px;
+}
+
+
+.full-interior-detail-section {
+    min-height: 400px;
+}
+
+.full-interior-detail-image {
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+}
+
+.full-interior-text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.wash-and-wax-section {
+    min-height: 400px;
+}
+
+.wash-and-wax-image {
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+}
+
+.paint-correction-text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+
+.van-image {
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.van-text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.service-locations-list {
+    margin-top: auto;
+    margin-bottom: 40px;
+}
