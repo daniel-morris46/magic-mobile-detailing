@@ -21,7 +21,7 @@
 
 .primary-header-title {
   color: white;
-  font-size: 5em;
+  font-size: 4em;
   font-weight: 70;
   text-align: center;
   width: 100%;
@@ -29,7 +29,7 @@
 
 .secondary-header-title {
   color: white;
-  font-size: 2.5em;
+  font-size: 2em;
   font-weight: 70;
   text-align: center;
   width: 100%;
@@ -118,8 +118,7 @@
 
 .phone-text {
     color: white;
-    font-size: 2.5em;
-
+    font-size: 1.5em;
 }
 
 .phone-number-container {
@@ -131,12 +130,12 @@
 }
 
 .phone-icon {
-    font-size: 3em;
+    font-size: 1.5em;
 }
 
 .phone-number {
     margin-left: 15px;
-    font-size: 3em;   
+    font-size: 1.5em;   
 }
 
 
@@ -149,7 +148,7 @@
 }
 
 .working-hours-icon {
-    font-size: 4em;
+    font-size: 2.5em;
 }
 
 .working-hours-text-container {
@@ -159,13 +158,12 @@
 }
 
 .working-hours-title {
-    font-size: 2em;
+    font-size: 1.4em;
     display: block;
 }
 
 .working-hours-text {
     display: block;
-    font-size: 1.1em;
 }
 
 .location-container {
@@ -177,7 +175,7 @@
 }
 
 .location-icon {
-    font-size: 4em;
+    font-size: 2.5em;
 }
 
 .location-text-container {
@@ -188,16 +186,16 @@
 
 .location-title {
     display: block;
-    font-size: 2em;
+    font-size: 1.4em;
 }
 
 .location-text {
     display: block;
-    font-size: 1.1em;
+    font-size: 1em;
 }
 
 .section-heading {
-    font-size: 3em;
+    font-size: 2em;
     text-align: center;
     margin: 50px;
 }

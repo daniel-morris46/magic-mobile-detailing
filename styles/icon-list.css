@@ -17,15 +17,15 @@
     min-height: 210px;
     box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 23%);
     padding: 20px 30px;
-    font-size: 1.2em;
+    font-size: 1em;
 }
 
 .icon-list-item-icon {
-    font-size: 4em;
+    font-size: 2em;
 }
 
 .icon-list-item-title {
-    font-size: 2em;
+    font-size: 1.5em;
     font-weight: 100;
     margin-top: 10px;
     text-align: center;
@@ -34,5 +34,5 @@
 .icon-list-item-text {
     text-align: center;
     padding: 20px 0px;
-    font-size: 1.2em;
+    font-size: 1em;
 }
