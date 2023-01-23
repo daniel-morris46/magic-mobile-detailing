@@ -1,0 +1,36 @@
+.primary-button, .secondary-button {
+    border-radius: 8px;
+    border-style: none;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    flex-shrink: 0;
+    font-size: 16px;
+    font-weight: 500;
+    height: 3rem;
+    padding: 0 1.6rem;
+    text-align: center;
+    text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+    transition: all .5s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.primary-button {
+    background-color: rgb(114, 164, 240);
+}
+
+.primary-button:hover {
+  transition-duration: .1s;
+  box-shadow: rgba(114, 164, 240, 0.5) 0 1px 30px;
+}
+
+.secondary-button {
+    background-color: rgb(50, 31, 216);
+}
+
+.secondary-button:hover {
+  transition-duration: .1s;
+  box-shadow: rgba(50, 31, 216, 0.5) 0 1px 30px;
+}
