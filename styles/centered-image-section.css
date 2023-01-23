@@ -1,0 +1,10 @@
+
+.centered-image-section {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-around;
+    width: min(80%, 1400px);
+    margin: auto;
+    gap: 80px;
+}
+
