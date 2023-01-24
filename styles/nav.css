@@ -51,6 +51,10 @@
 .nav-item {
 }
 
+.hidden-nav-item {
+    display: none;
+}
+
 .nav-link {
     font-weight: 400;
     color: #475569;
@@ -67,7 +71,7 @@
 }
 
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 750px) {
     .nav-menu {
         position: fixed;
         left: -100%;
@@ -87,7 +91,21 @@
     }
 
     .nav-item {
-        margin: 2.5rem 0;
+        margin-top: 20px;
+    }
+
+    .nav-item:last-of-type {
+        margin-bottom: 20px;
+    }
+
+    .hidden-nav-item {
+        margin: -0.5em;
+        width: 90%;
+        height: 35px;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        line-height: 40px;
     }
 
     .hamburger {

@@ -8,11 +8,13 @@
 <link rel="stylesheet" href="../styles/icon-list.css">
 <link rel="stylesheet" href="../styles/buttons.css">
 
+<script src="./scripts/home.js"></script>
+
 <div class="page-header">
     <h1 class="primary-header-title">Saskatoon Mobile Detailing Service</h1>
     <h3 class="secondary-header-title">Full interior cleaning, exterior hand wash and wax, paint correction and more.</h3>
     <div class="header-buttons">
-        <button class="primary-button primary-button" role="button">Learn More</button>
+        <button class="primary-button primary-button" role="button" onclick="learnMore()">Learn More</button>
         <button class="secondary-button header-button-2" role="button">Book Now</button>
     </div>   
 </div>
@@ -39,7 +41,7 @@
         </div>
     </div>
 </div>
-<h2 class="section-heading">Our Most Popular Detailing Services</h2>
+<h2 id="learnMore" class="section-heading">Our Most Popular Detailing Services</h2>
 <div class="full-interior-detail-section section left-image-section">
     <div class="left-image-section-image-container">
         <img class="full-interior-detail-image" src="images/after.jpg">
@@ -56,7 +58,7 @@
             <p>We have transformed many interiors in Saskatoon. Pet hair, coffee spills, food stains, etc.. We have seen it all and cleaned it all.</p>
         </div>
         <div class="left-image-section-button">
-            <button class="primary-button" role="button">Read More</button>
+            <button class="primary-button" role="button" onclick="location.href='/full-interior-detail-saskatoon.html'">Read More</button>
         </div>
     </div>
 </div>

@@ -24,13 +24,26 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-width: 301px;
+    min-width: 300px;
     min-height: 200px;
     gap: 20px;
     box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 23%);
+    cursor: pointer;
 }
 
-.price-box:nth-child(2) {
+.price-box-lg {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 350px;
+    min-height: 250px;
+    gap: 20px;
+    box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 23%);
+    cursor: pointer;
+}
+
+.selected-price-box {
     background-color: hsl(226, 62%, 63%); 
     color: white;
 }

@@ -3,7 +3,7 @@
     display: flex;
     align-items: stretch;
     justify-content: space-around;
-    width: min(80%, 1400px);
+    width: min(80%, 800px);
     margin: auto;
     gap: 80px;
 }

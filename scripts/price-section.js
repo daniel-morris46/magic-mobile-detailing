@@ -1,0 +1,17 @@
+$(document).ready(function(){
+    $("#sm-price-box").click(function(event){
+        $("#sm-price-box").addClass("selected-price-box");
+        $("#md-price-box").removeClass("selected-price-box");
+        $("#lg-price-box").removeClass("selected-price-box");
+    });
+    $("#md-price-box").click(function(event){
+        $("#sm-price-box").removeClass("selected-price-box");
+        $("#md-price-box").addClass("selected-price-box");
+        $("#lg-price-box").removeClass("selected-price-box");
+    });
+    $("#lg-price-box").click(function(event){
+        $("#sm-price-box").removeClass("selected-price-box");
+        $("#md-price-box").removeClass("selected-price-box");
+        $("#lg-price-box").addClass("selected-price-box");
+    });
+});

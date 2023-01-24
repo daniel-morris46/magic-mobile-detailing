@@ -5,7 +5,7 @@ hamburger.addEventListener("click", mobileMenu);
 
 const navLink = document.querySelectorAll(".nav-link");
 
-navLink.forEach(n => n.addEventListener("click", closeMenu));
+// navLink.forEach(n => n.addEventListener("click", closeMenu));
 
 function mobileMenu() {
     hamburger.classList.toggle("active");
@@ -19,7 +19,11 @@ function closeMenu() {
 
 function showDropdown(dropdown) {
     hideDropdowns();
-    $('#' + dropdown).toggle();
+    if (window.innerWidth > 750) {
+        $('#' + dropdown).toggle();
+    } else {
+        $('.' + dropdown + '-hidden').toggle();
+    }
 }
 
 function hideDropdowns() {
@@ -33,7 +37,7 @@ $(window).click(function(e) {
         e.target.parentElement && 
         e.target.parentElement.matches('.dropdown-content')
     )) {
-      console.log('matched');
+        
     } else {
         hideDropdowns();
     }
