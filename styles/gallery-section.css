@@ -8,6 +8,8 @@
     align-items: center;
     justify-content: center;
     gap: 10px;
+    max-width: min(80%, 1330px);
+    margin: auto;
 }
 
 .gallery img {

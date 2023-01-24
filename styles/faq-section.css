@@ -9,7 +9,8 @@
 }
 
 .faq-questions {
-    margin: 0 5%;
+    margin: auto;
+    width: min(80%, 1300px);
 }
 
 .faq-question-container {

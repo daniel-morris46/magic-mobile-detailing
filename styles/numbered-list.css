@@ -3,8 +3,8 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    width: 80%;
-    margin-left: 10%;
+    width: min(80%, 1300px);
+    margin: auto;
     gap: 30px;
 }
 

@@ -4,7 +4,8 @@
     justify-content: center;
     align-items: stretch;
     width: 80%;
-    margin-left: 10%;
+    width: min(80%, 1300px);
+    margin: auto;
     gap: 30px;
 }
 
@@ -13,8 +14,7 @@
     flex-basis: 40%;
     min-width: 300px;
     max-width: 800px;
-    justify-content: stretch;
-    align-items: center;
+    align-items: stretch;
     min-height: 100px;
     padding: 10px 10px 10px 0;
     box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 23%);
@@ -38,7 +38,7 @@
 .numbered-titled-list-title {
     display: block;
     font-size: 1.3em;
-    padding: 20px 0;
+    padding: 20px 5px;
 }
 
 .numbered-titled-list-text {
