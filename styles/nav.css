@@ -12,6 +12,7 @@
     position: absolute;
     background-color: rgba(255, 255, 255, 0.9);
     width: 100%;
+    min-width: 300px;
     min-height: 75px;
     width: calc(100% - 30px);
     margin: 15px;
@@ -65,13 +66,10 @@
 }
 
 .nav-logo {
-    font-size: 1.5rem;
-    font-weight: 500;
-    color: #482ff7;
+    width: 200px;
 }
 
-
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 1020px) {
     .nav-menu {
         position: fixed;
         left: -100%;
@@ -145,6 +143,10 @@
     text-decoration: none;
     display: block;
     text-align: left;
+  }
+
+  .bookable-service {
+    background-color: rgb(239, 243, 248)
   }
   
   .dropdown-content a:hover {

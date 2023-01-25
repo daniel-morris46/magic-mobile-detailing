@@ -12,8 +12,9 @@
 .numbered-titled-list-item {
     display: flex;
     flex-basis: 40%;
+    flex-grow: 1;
     min-width: 300px;
-    max-width: 800px;
+    max-width: 500px;
     align-items: stretch;
     min-height: 100px;
     padding: 10px 10px 10px 0;

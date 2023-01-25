@@ -19,7 +19,7 @@ function closeMenu() {
 
 function showDropdown(dropdown) {
     hideDropdowns();
-    if (window.innerWidth > 750) {
+    if (window.innerWidth > 1020) {
         $('#' + dropdown).toggle();
     } else {
         $('.' + dropdown + '-hidden').toggle();
@@ -55,7 +55,7 @@ var sticky = 15;
 // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
 function myFunction() {
   if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
+    navbar.classList.add("sticky");
   } else {
     navbar.classList.remove("sticky");
   }

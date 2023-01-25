@@ -5,7 +5,8 @@
     justify-content: space-around;
     width: min(80%, 800px);
     margin: 50px auto;
-    gap: 80px;
+    gap: 40px;
+    column-gap: 80px;
 }
 
 .right-image-section-image-container {

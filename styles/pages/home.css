@@ -60,7 +60,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: grey;
+    background-color: rgb(214, 214, 214);
     min-height: 150px;
     gap: 20px;
     flex-wrap: wrap;

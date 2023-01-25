@@ -3,26 +3,18 @@
 
 <header class="header">
     <nav class="navbar">
-        <a href="index.html" class="nav-logo">Magic Mobile Detailing</a>
+        <a href="index.html"><img id="text-logo" class="nav-logo" src="images/Logo3-small.png"><img></a>
         <ul class="nav-menu">
             <li class="nav-item">
                 <a href="index.html" class="nav-link">Home</a>
             </li>
             <li class="nav-item">
-                <a href="#" class="nav-link dropbtn" onclick="showDropdown('serviceAreas')">Service Areas <i class="drop-chevron fa-sharp fa-solid fa-chevron-down"></i></a>
-                <div class="dropdown-content" id="serviceAreas">
-                  <a href="saskatoon-mobile-car-detailing.html">Saskatoon</a>
-                  <a href="#">Martensville</a>
-                  <a href="#">Warman</a>
-                </div>
-            </li>
-            <li class="nav-item">
                 <a href="#" class="nav-link dropbtn" onclick="showDropdown('interior')">Interior <i class="drop-chevron fa-sharp fa-solid fa-chevron-down"></i></a>
                 <div class="dropdown-content" id="interior">
-                  <a href="full-interior-detail-saskatoon.html">Full Interior Detail</a>
-                  <a href="express-interior-detail-saskatoon.html">Express Interior Detail</a>
+                  <a class="bookable-service" href="full-interior-detail-saskatoon.html">Full Interior Detail</a>
+                  <a class="bookable-service" href="express-interior-detail-saskatoon.html">Express Interior Detail</a>
                   <a href="#">Fabric Protection</a>
-                  <a href="#">Interior Glass Coating</a>
+                  <a href="#">Smoke Odor Removal</a>
                 </div>
             </li>
             <li class="nav-item hidden-nav-item interior-hidden">
@@ -35,50 +27,58 @@
                 <a href="#" class="nav-link">Fabric Protection</a>
             </li>
             <li class="nav-item hidden-nav-item interior-hidden">
-                <a href="#" class="nav-link">Interior Glass Coating</a>
+                <a href="#" class="nav-link">Smoke Odor Removal</a>
             </li>
             <li class="nav-item">
                 <a href="#" class="nav-link dropbtn" onclick="showDropdown('exterior')">Exterior <i class="drop-chevron fa-sharp fa-solid fa-chevron-down"></i></a>
                 <div class="dropdown-content" id="exterior">
+                  <a class="bookable-service" href="wash-and-wax-saskatoon.html">Wash and Wax</a>
+                  <a class="bookable-service" href="wash-and-polish-saskatoon.html">Wash and Polish</a>
                   <a href="hand-car-wash-saskatoon.html">Premium Hand Wash</a>
-                  <a href="wash-and-wax-saskatoon.html">Wash and Wax</a>
                   <a href="engine-cleaning-saskatoon.html">Engine Cleaning</a>
                   <a href="headlight-restoration-saskatoon.html">Headlight Restoration</a>
                   <a href="#">Exterior Glass Coating</a>
                 </div>
             </li>
             <li class="nav-item hidden-nav-item exterior-hidden">
-                <a href="hand-car-wash-saskatoon.html" class="nav-link">Premium Hand Wash</a>
+                <a href="wash-and-wax-saskatoon.html" class="nav-link">Wash and Wax</a>
             </li>
             <li class="nav-item hidden-nav-item exterior-hidden">
-                <a href="wash-and-wax-saskatoon.html" class="nav-link">Wash and Wax</a>
+                <a href="wash-and-polish-saskatoon.html" class="nav-link">Wash and Polish</a>
+            </li>
+            <li class="nav-item hidden-nav-item exterior-hidden">
+                <a href="hand-car-wash-saskatoon.html" class="nav-link">Premium Hand Wash</a>
             </li>
             <li class="nav-item hidden-nav-item exterior-hidden">
                 <a href="engine-cleaning-saskatoon.html" class="nav-link">Engine Cleaning</a>
             </li>
             <li class="nav-item hidden-nav-item exterior-hidden">
-                <a href="headlight-restoration-saskatoon.html" class="nav-link">Headlight Restoration</a>
+                <a href="#" class="nav-link">Headlight Restoration</a>
             </li>
             <li class="nav-item hidden-nav-item exterior-hidden">
                 <a href="#" class="nav-link">Exterior Glass Coating</a>
             </li>
             <li class="nav-item">
-                <a href="#" class="nav-link dropbtn" onclick="showDropdown('paintCorrection')">Paint Correction <i class="drop-chevron fa-sharp fa-solid fa-chevron-down"></i></a>
-                <div class="dropdown-content" id="paintCorrection">
-                  <a href="#">1 Stage Polish</a>
-                  <a href="#">2 Stage Polish</a>
-                  <a href="#">Ceramic Coating</a>
+                <a href="#" class="nav-link dropbtn" onclick="showDropdown('otherServices')">Other Services <i class="drop-chevron fa-sharp fa-solid fa-chevron-down"></i></a>
+                <div class="dropdown-content" id="otherServices">
+                  <a href="semi-truck-detailing-saskatoon.html">Semi Truck Detailing</a>
+                  <a href="farm-equipment-cleaning-saskatoon.html">Farm Equipment Cleaning</a>
                 </div>
             </li>
+            <li class="nav-item hidden-nav-item otherServices-hidden">
+                <a href="semi-truck-detailing-saskatoon.html" class="nav-link">Semi Truck Detailing</a>
+            </li>
+            <li class="nav-item hidden-nav-item otherServices-hidden">
+                <a href="farm-equipment-detailing-saskatoon.html" class="nav-link">Farm Equipment Cleaning</a>
+            </li>
             <li class="nav-item">
-                <a href="#" class="nav-link dropbtn" onclick="showDropdown('gallery')">Gallery <i class="drop-chevron fa-sharp fa-solid fa-chevron-down"></i></a>
-                <div class="dropdown-content" id="gallery">
-                  <a href="#">Interior</a>
-                  <a href="#">Exterior</a>
-                </div>
+                <a href="#" class="nav-link">Gallery</a>
             </li>
             <li class="nav-item">
                 <a href="#" class="nav-link">About Us</a>
+            </li>
+            <li class="nav-item">
+                <button class="primary-button" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/magicmobileautodetailing/closed-booking-page'});return false;">Book Now</button>
             </li>
         </ul>
         <div class="hamburger">

@@ -15,12 +15,14 @@
 <link rel="stylesheet" href="styles/buttons.css">
 
 <link rel="stylesheet" href="styles/libraries/lightbox.min.css">
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
 
 <script src="scripts/libraries/lightbox-plus-jquery.min.js"></script>
 <script src="scripts/price-section.js"></script>
 
 <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
 <script src="https://kit.fontawesome.com/ce33f5b44a.js" crossorigin="anonymous"></script>
+<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
@@ -113,19 +115,19 @@
                 <span class="price-size">Small</span>
                 <span class="price-example">(Coupe / Sedan)</span>
                 <span class="price-range">$150 - $200</span>
-                <button class="primary-button">Book Now</button>
+                <button class="primary-button" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/magicmobileautodetailing/closed-booking-page'});return false;">Book Now</button>
             </div>
             <div id="md-price-box" class="price-box-lg selected-price-box">
                 <span class="price-size">Medium</span>
                 <span class="price-example">(Mid Size SUV / Crossover)</span>
                 <span class="price-range">$180 - $220</span>
-                <button class="primary-button">Book Now</button>
+                <button class="primary-button" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/magicmobileautodetailing/closed-booking-page'});return false;">Book Now</button>
             </div>
             <div id="lg-price-box" class="price-box-lg">
                 <span class="price-size">Large</span>
                 <span class="price-example">(Large SUV / Truck)</span>
                 <span class="price-range">$240 - $280</span>
-                <button class="primary-button">Book Now</button>
+                <button class="primary-button" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/magicmobileautodetailing/closed-booking-page'});return false;">Book Now</button>
             </div>
         </div>
     </div>
