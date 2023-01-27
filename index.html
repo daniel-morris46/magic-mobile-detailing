@@ -29,16 +29,17 @@
     <!--Navigation bar-->
 
     <!--Page-->
-    <div class="page-header">
-        <h1 class="primary-header-title">Your Saskatoon Detailing Solution</h1>
-        <h3 class="secondary-header-title">Full interior cleaning, exterior hand wash and wax, paint correction and more.</h3>
+    <div id="page-header" class="page-header">
+        <img id="magic-logo" src="images/Logo3Magic-small.png">
+        <h1 id="primary-header-title">Saskatoon's Auto Detailing Solution</h1>
+        <h3 id="secondary-header-title">Full interior cleaning, exterior hand wash and wax, paint correction and more.</h3>
         <div class="header-buttons">
-            <button class="primary-button header-button-2" role="button">Book Now</button>
+            <button class="book-now-button" role="button" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/magicmobileautodetailing/closed-booking-page'});return false;">Book Now</button>
         </div>   
     </div>
     <div class="contact-container">
         <div class="phone-container">
-            <i class="phone-icon fa-solid fa-phone"></i>
+            <a href="tel:3062027177"><i class="phone-icon fa-solid fa-phone"></i></a>
             <div class="phone-text-container">
                 <span class="phone-title">Contact Us</span>
                 <span class="phone-text">306-202-8177</span>
@@ -49,13 +50,6 @@
             <div class="working-hours-text-container">
                 <span class="working-hours-title">Working Hours</span>
                 <span class="working-hours-text">Mon - Sun: 8 AM - 7 PM</span>
-            </div>
-        </div>
-        <div class="location-container">
-            <i class="location-icon fa-solid fa-location-dot"></i>
-            <div class="location-text-container">
-                <span class="location-title">Location</span>
-                <span class="location-text">Saskatoon & Surrounding Area</span>
             </div>
         </div>
     </div>
@@ -70,7 +64,7 @@
                 <p>Are you looking to refresh the inside of your car? Is it in need of a deep cleaning? Let us handle it for you.</p>
             </div>
             <div class="left-image-section-text">
-                <p>Our top-selling interior cleaning service is perfect for any vehicle. Whether it's a minivan, truck, or something in between, we will greatly improve the appearance of your interior.</p>
+                <p>Our top-selling interior cleaning service is perfect for any vehicle. Whether it's a car, truck, or something in between, we will greatly improve the appearance of your interior.</p>
             </div>
             <div class="left-image-section-text">
                 <p>We have transformed many interiors in Saskatoon. Pet hair, coffee spills, food stains, etc.. We have seen it all and cleaned it all.</p>
@@ -133,11 +127,6 @@
             <button class="box-list-item-button primary-button" role="button" onclick="location.href='/hand-car-wash-saskatoon.html'">Read More</button>
         </div>
         <div class="box-list-item">
-            <h3 class="box-list-item-title">Ceramic Coating</h3>
-            <p class="box-list-item-description">Extremely durable paint protection that gives long lasting water beading and produces a long-lasting, stunning shine.</p>
-            <button class="box-list-item-button primary-button" role="button">Read More</button>
-        </div>
-        <div class="box-list-item">
             <h3 class="box-list-item-title">Smoke Odor Removal</h3>
             <p class="box-list-item-description">Our deep cleaning methods and ozone generation will be sure to remove unwated odors from your vehicle for good.</p>
             <button class="box-list-item-button primary-button" role="button">Read More</button>
@@ -148,10 +137,10 @@
             <button class="box-list-item-button primary-button" role="button">Read More</button>
         </div>
     </div>
-    <h2 class="section-heading">Servicing the Saskatoon Area - At Your Home, Appartment, or Business</h2>
+    <h2 class="section-heading">At Your Home, Appartment, or Business</h2>
     <div class="section left-image-section">
         <div class="left-image-section-image-container">
-            <img class="van-image" src="images/van.jpg">
+            <img class="van-image" src="images/drying.jpeg">
         </div>
         <div class="van-text-container left-image-section-text-container">
             <div class="left-image-section-text">
@@ -162,16 +151,16 @@
             </div>
             <ul class="service-locations-list bullet-point-list">
                 <li class="bullet-point-list-item">
-                    <a href="saskatoon-mobile-car-detailing"><i class="bullet-point-icon fa-solid fa-chevron-right"></i>Saskatoon</a>
+                    <a href="#"><i class="bullet-point-icon fa-solid fa-chevron-right"></i>Saskatoon</a>
                 </li>
                 <li class="bullet-point-list-item">
-                    <a href="saskatoon-mobile-car-detailing"><i class="bullet-point-icon fa-solid fa-chevron-right"></i>Warman</a>
+                    <a href="#"><i class="bullet-point-icon fa-solid fa-chevron-right"></i>Warman</a>
                 </li>
                 <li class="bullet-point-list-item">
-                    <a href="saskatoon-mobile-car-detailing"><i class="bullet-point-icon fa-solid fa-chevron-right"></i>Martensville</a>
+                    <a href="#"><i class="bullet-point-icon fa-solid fa-chevron-right"></i>Martensville</a>
                 </li>
                 <li class="bullet-point-list-item">
-                    <a href="saskatoon-mobile-car-detailing"><i class="bullet-point-icon fa-solid fa-chevron-right"></i>Dundurn</a>
+                    <a href="#"><i class="bullet-point-icon fa-solid fa-chevron-right"></i>Dundurn</a>
                 </li>
             </ul>
         </div>

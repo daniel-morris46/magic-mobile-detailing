@@ -13,3 +13,11 @@
     max-width: 80%;
     margin: 40px auto;
 }
+
+.farm-price-boxes {
+    gap: 30px;
+}
+
+.farm-gallery {
+    /* max-width: min(80%, 900px); */
+}

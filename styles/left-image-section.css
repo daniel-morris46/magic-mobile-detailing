@@ -3,7 +3,7 @@
     display: flex;
     align-items: stretch;
     justify-content: space-around;
-    width: min(80%, 800px);
+    width: min(80%, 1000px);
     margin: auto;
     gap: 40px;
     column-gap: 80px;
@@ -12,7 +12,6 @@
 .left-image-section-image-container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
 }
 
@@ -28,10 +27,15 @@
     gap: 20px;
 }
 
+.left-image-section-image-container img {
+    border-radius: 10px;
+}
+
 
 .left-image-section-title {
     font-size: 1.5em;
 }
+
 
 .left-image-section-text {
     font-size: 1em;

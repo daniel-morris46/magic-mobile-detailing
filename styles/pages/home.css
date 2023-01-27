@@ -1,5 +1,5 @@
 .page-header {
-    background-image: url('/images/kyle_truck.JPG');
+    background-image: url('/images/Saskatoon2.PNG');
     background-position: center;
     background-size: cover;
 }
@@ -46,23 +46,15 @@
   box-shadow: rgba(114, 164, 240, 0.5) 0 1px 30px;
 }
 
-.header-button-2 {
-  background-color: rgb(50, 31, 216);
-}
-
-.header-button-2:hover {
-  box-shadow: rgba(50, 31, 216, 0.5) 0 1px 30px;
-}
-
 .contact-container {
-    width: 80%;
+    width: min(80%, 800px);
     margin: -30px auto 30px;
     display: flex;
     justify-content: space-around;
     align-items: center;
     background-color: rgb(214, 214, 214);
+    border-radius: 10px;
     min-height: 150px;
-    gap: 20px;
     flex-wrap: wrap;
     padding: 10px 30px;
 }
@@ -70,13 +62,14 @@
 .phone-container {
     height: 100px;
     display: flex;
-    justify-content: center;
     align-items: center;
     gap: 15px;
+    width: 225px;
 }
 
 .phone-icon {
     font-size: 2.5em;
+    color: rgb(44, 85, 239);
 }
 
 .phone-text-container {
@@ -97,9 +90,9 @@
 .working-hours-container {
     height: 100px;
     display: flex;
-    justify-content: center;
     align-items: center;
     gap: 15px;
+    width: 225px;
 }
 
 .working-hours-icon {
@@ -186,6 +179,7 @@
 
 .van-image {
     width: 400px;
+    max-width: 100%;
     height: 300px;
     object-fit: cover;
 }

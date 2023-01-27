@@ -1,4 +1,4 @@
-.primary-button, .secondary-button {
+.primary-button, .book-now-button {
     border-radius: 8px;
     border-style: none;
     box-sizing: border-box;
@@ -26,11 +26,11 @@
   box-shadow: rgba(114, 164, 240, 0.5) 0 1px 30px;
 }
 
-.secondary-button {
-    background-color: rgb(50, 31, 216);
+.book-now-button {
+    background-color: rgb(44, 85, 239);
 }
 
-.secondary-button:hover {
+.book-now-button:hover {
   transition-duration: .1s;
-  box-shadow: rgba(50, 31, 216, 0.5) 0 1px 30px;
+  box-shadow: rgba(44, 85, 239, 0.5) 0 1px 30px;
 }

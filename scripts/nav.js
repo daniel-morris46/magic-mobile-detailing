@@ -1,3 +1,5 @@
+const hamburgerScreenWidth = 1020;
+
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
 
@@ -19,7 +21,7 @@ function closeMenu() {
 
 function showDropdown(dropdown) {
     hideDropdowns();
-    if (window.innerWidth > 1020) {
+    if (window.innerWidth > hamburgerScreenWidth) {
         $('#' + dropdown).toggle();
     } else {
         $('.' + dropdown + '-hidden').toggle();
@@ -49,14 +51,79 @@ window.onscroll = function() {myFunction()};
 // Get the navbar
 var navbar = document.getElementsByClassName("navbar")[0];
 
-// Get the offset position of the navbar
-var sticky = 15;
 
 // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
-function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky");
-  } else {
-    navbar.classList.remove("sticky");
-  }
-}
+window.onscroll = () => {
+  screenChange();
+};
+
+window.onresize = () => {
+    screenChange();
+};
+
+screenChange();
+
+$('document').ready(screenChange);
+
+function screenChange () {
+    
+    let pageHasScrolledDown15 = window.pageYOffset >= 15;
+    let pageHasScrolledDown200 = window.pageYOffset >= 100;
+    let onHomePage = window.location.pathname.split("/").pop() == "index.html";
+    let isMobileView = window.innerWidth < hamburgerScreenWidth;
+
+    let isRounded = !pageHasScrolledDown15;
+    let isRectangle = onHomePage && pageHasScrolledDown200 || !onHomePage && pageHasScrolledDown15;
+    let isCircle = isMobileView && onHomePage && !pageHasScrolledDown200;
+
+    if (isRounded) {
+        navbar.classList.add("rounded");
+        navbar.classList.remove("rectangle");
+        navbar.classList.remove("circle");
+    }
+    if (isRectangle) {
+        navbar.classList.remove("rounded");
+        navbar.classList.add("rectangle");
+        navbar.classList.remove("circle");
+    }
+    if (isCircle) {
+        navbar.classList.remove("rounded");
+        navbar.classList.remove("rectangle");
+        navbar.classList.add("circle");
+    }
+
+    if (isCircle) {
+        $("#nav-logo").hide();
+    } else {
+        $("#nav-logo").show();
+    }
+
+    if (onHomePage && isMobileView) {
+        $("#magic-logo").show();
+    } else {
+        $("#magic-logo").hide();
+    }
+
+    if (onHomePage) {
+        if (isMobileView) {
+            $("#primary-header-title").removeClass("large-primary-header-title");
+            $("#primary-header-title").addClass("small-primary-header-title");
+
+            $("#page-header").addClass("mobile-home-page-header");
+
+            $("#primary-header-title").text("Mobile Detailing");
+            $("#secondary-header-title").text("Saskatoon's Auto Detailing Solution");
+        } else {
+            $("#primary-header-title").removeClass("small-primary-header-title");
+            $("#primary-header-title").addClass("large-primary-header-title");
+
+            $("#page-header").removeClass("mobile-home-page-header");
+
+            $("#primary-header-title").text("Saskatoon's Auto Detailing Solution");
+            $("#secondary-header-title").text("Full interior cleaning, exterior hand wash and wax, paint correction and more.");
+        }
+    } else {
+        $("#primary-header-title").removeClass("small-primary-header-title");
+        $("#primary-header-title").addClass("large-primary-header-title");
+    }
+};
