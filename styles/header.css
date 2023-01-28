@@ -5,6 +5,11 @@
     justify-content: center;
     min-height: 550px;
     padding: 130px 30px 60px 30px;
+    background-position: center;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 #primary-header-title {

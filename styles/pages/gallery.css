@@ -6,3 +6,9 @@
 .page-header {
     background-position-y: 30%;
 }
+
+.insta-gallery {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 20px;
+}

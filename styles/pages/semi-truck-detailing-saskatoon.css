@@ -4,12 +4,13 @@
     background-size: cover;
 }
 
-.car-wash-image {
-    max-width: 400px;
-    height: 70%;
+.semi-aspects {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  column-gap: 50px;
 }
-
-.wash-description {
-    max-width: 80%;
-    margin: 40px auto;
+.semi-aspects li {
+    flex-basis: 300px;
+    list-style: inside;
 }

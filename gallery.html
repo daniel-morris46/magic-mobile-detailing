@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="styles/global.css">
+
+<link rel="stylesheet" href="styles/header.css">
+<link rel="stylesheet" href="styles/centered-image-section.css">
+<link rel="stylesheet" href="styles/text-section.css">
+<link rel="stylesheet" href="styles/numbered-titled-list.css">
+<link rel="stylesheet" href="styles/pricing-section.css">
+<link rel="stylesheet" href="styles/gallery-section.css">
+<link rel="stylesheet" href="styles/faq-section.css">
+<link rel="stylesheet" href="styles/buttons.css">
+
+<link rel="stylesheet" href="styles/pages/gallery.css">
+
+<link rel="stylesheet" href="styles/libraries/lightbox.min.css">
+
+<script src="scripts/libraries/lightbox-plus-jquery.min.js"></script>
+<script src="scripts/price-section.js"></script>
+
+<script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script src="https://kit.fontawesome.com/ce33f5b44a.js" crossorigin="anonymous"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <!--Navigation bar-->
+    <div id="nav-placeholder"></div>
+    <script>
+        $(function(){
+            $("#nav-placeholder").load("nav.html");
+        });
+    </script>
+    <!--Navigation bar-->
+
+    <!--Page-->
+    <div class="page-header">
+        <h1 id="primary-header-title">Gallery</h1>
+        <h3 id="secondary-header-title">Check out our work</h3> 
+    </div>
+    <h2 class="section-heading">Here's some of our best transformations</h2>
+    <div class="section gallery-section">
+        <div class="gallery">
+            <a href="images/galleries/interior-detail/before/3.JPEG" data-lightbox="gallery"><img src="images/galleries/interior-detail/before/3-small.JPEG"></a>
+            <a href="images/galleries/interior-detail/after/4.JPEG" data-lightbox="gallery"><img src="images/galleries/interior-detail/after/4-small.jpg"></a>
+        </div>
+    </div>
+<!-- 
+    <h2 class="section-heading">Check out our instagram to see what we've been up to lately</h2>
+    <div class="insta-gallery embedsocial-hashtag" data-ref="1590ed246a593df026297afb18c0141689df9d04"> <a class="feed-powered-by-es feed-powered-by-es-feed-new" href="https://embedsocial.com/social-media-aggregator/" target="_blank" title="Widget by EmbedSocial"> Widget by EmbedSocial<span>→</span> </a> </div> <script> (function(d, s, id) { var js; if (d.getElementById(id)) {return;} js = d.createElement(s); js.id = id; js.src = "https://embedsocial.com/cdn/ht.js"; d.getElementsByTagName("head")[0].appendChild(js); }(document, "script", "EmbedSocialHashtagScript")); </script>
+ -->
+
+    <!--Page-->
+    
+</body>
+<!--Footer-->
+<footer>
+    <div id="footer-placeholder"></div>
+    <script>
+        $(function(){
+            $("#footer-placeholder").load("footer.html");
+        });
+    </script>
+</footer>
+<!--Footer-->
+</html>

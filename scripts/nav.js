@@ -68,13 +68,13 @@ $('document').ready(screenChange);
 function screenChange () {
     
     let pageHasScrolledDown15 = window.pageYOffset >= 15;
-    let pageHasScrolledDown200 = window.pageYOffset >= 100;
+    let pageHasScrolledDown100 = window.pageYOffset >= 100;
     let onHomePage = window.location.pathname.split("/").pop() == "index.html";
     let isMobileView = window.innerWidth < hamburgerScreenWidth;
 
     let isRounded = !pageHasScrolledDown15;
-    let isRectangle = onHomePage && pageHasScrolledDown200 || !onHomePage && pageHasScrolledDown15;
-    let isCircle = isMobileView && onHomePage && !pageHasScrolledDown200;
+    let isRectangle = onHomePage && pageHasScrolledDown100 || !onHomePage && pageHasScrolledDown15;
+    let isCircle = isMobileView && onHomePage && !pageHasScrolledDown100;
 
     if (isRounded) {
         navbar.classList.add("rounded");

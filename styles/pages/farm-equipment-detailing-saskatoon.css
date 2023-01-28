@@ -4,20 +4,10 @@
     background-size: cover;
 }
 
-.car-wash-image {
-    max-width: 400px;
-    height: 70%;
-}
-
-.wash-description {
-    max-width: 80%;
-    margin: 40px auto;
-}
-
 .farm-price-boxes {
     gap: 30px;
 }
 
 .farm-gallery {
-    /* max-width: min(80%, 900px); */
+    max-width: min(80%, 1200px);
 }

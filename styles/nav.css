@@ -18,6 +18,7 @@
     margin: 15px;
     border-radius: 10px;
     box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 23%);
+    z-index: 1000;
 }
 
 .mobile-home-page-header {
@@ -168,7 +169,7 @@
   }
 
   .bookable-service {
-    background-color: rgb(239, 243, 248)
+    background-color: rgb(210, 225, 245)
   }
   
   .dropdown-content a:hover {
