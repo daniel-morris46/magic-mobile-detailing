@@ -18,6 +18,10 @@
     padding-right: 40px;
 }
 
+.footer-list a {
+    color: black;
+}
+
 .footer-list a:hover {
     color: blue;
     cursor: pointer;
