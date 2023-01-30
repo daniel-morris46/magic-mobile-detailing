@@ -119,7 +119,7 @@ function screenChange () {
             $("#page-header").removeClass("mobile-home-page-header");
 
             $("#primary-header-title").text("Saskatoon's Auto Detailing Solution");
-            $("#secondary-header-title").text("Full interior cleaning, exterior hand wash and wax, paint correction and more.");
+            $("#secondary-header-title").text("Full interior cleaning, exterior hand wash and wax, paint correction and more");
         }
     } else {
         $("#primary-header-title").removeClass("small-primary-header-title");
