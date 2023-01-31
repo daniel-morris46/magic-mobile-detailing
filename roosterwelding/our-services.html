@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Engine Cleaning Saskatoon | Magic Mobile Detailing</title>
+<link rel="icon" type="image/x-icon" href="images/favicon.ico">
+<link rel="stylesheet" href="styles/global.css">
+
+<link rel="stylesheet" href="styles/pages/our-services.css">
+
+<link rel="stylesheet" href="styles/header.css">
+<link rel="stylesheet" href="styles/centered-image-section.css">
+<link rel="stylesheet" href="styles/text-section.css">
+<link rel="stylesheet" href="styles/numbered-titled-list.css">
+<link rel="stylesheet" href="styles/pricing-section.css">
+<link rel="stylesheet" href="styles/gallery-section.css">
+<link rel="stylesheet" href="styles/faq-section.css">
+<link rel="stylesheet" href="styles/buttons.css">
+
+<script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script src="scripts/price-section.js"></script>
+<script src="https://kit.fontawesome.com/ce33f5b44a.js" crossorigin="anonymous"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <!--Navigation bar-->
+    <div id="nav-placeholder"></div>
+    <script>
+        $(function(){
+            $("#nav-placeholder").load("nav.html");
+        });
+    </script>
+    <!--Navigation bar-->
+
+    <!--Page-->
+    <div class="page-header">
+        <h1 id="primary-header-title">We Weld Things</h1>
+        <h2 id="secondary-header-title">Any project big or small</h2>
+    </div>
+    <h3 class="section-heading">Get in touch and let us know how we can help with your project</h3>
+    <div class="section pricing-section">
+        <h3 class="section-heading">Simple Pricing</h3>
+        <h4 class="pricing-secondary-header">Price is based on the size of the job</h4>
+        <div class="price-boxes">
+            <div id="sm-price-box" class="price-box-lg">
+                <span class="price-size">Small Job</span>
+                <span class="price-range">$</span>
+                <button class="book-now-button" onclick="location.href='/roosterwelding/contact-us.html'">Contact Us</button>
+            </div>
+            <div id="md-price-box" class="price-box-lg selected-price-box">
+                <span class="price-size">Big Job</span>
+                <span class="price-range">$$</span>
+                <button class="book-now-button" onclick="location.href='/roosterwelding/contact-us.html'">Contact Us</button>
+            </div>
+            <div id="lg-price-box" class="price-box-lg">
+                <span class="price-size">Fuckin Big Job</span>
+                <span class="price-range">$$$</span>
+                <button class="book-now-button" onclick="location.href='/roosterwelding/contact-us.html'">Contact Us</button>
+            </div>
+        </div>
+    </div>
+    <!--Page-->
+    
+</body>
+<!--Footer-->
+<footer>
+    <div id="footer-placeholder"></div>
+    <script>
+        $(function(){
+            $("#footer-placeholder").load("footer.html");
+        });
+    </script>
+</footer>
+<!--Footer-->
+</html>

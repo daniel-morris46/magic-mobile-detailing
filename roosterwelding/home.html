@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Rooster Welding & Fabrication</title>
+<link rel="icon" type="image/x-icon" href="images/favicon.ico">
+
+<link rel="stylesheet" href="styles/pages/home.css">
+<link rel="stylesheet" href="styles/global.css">    
+<link rel="stylesheet" href="styles/header.css">
+<link rel="stylesheet" href="styles/left-image-section.css">
+<link rel="stylesheet" href="styles/right-image-section.css">
+<link rel="stylesheet" href="styles/box-list.css">
+<link rel="stylesheet" href="styles/bullet-point-list.css">
+<link rel="stylesheet" href="styles/icon-list.css">
+<link rel="stylesheet" href="styles/buttons.css">
+
+<script src="scripts/home.js"></script>
+
+<script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script src="https://kit.fontawesome.com/ce33f5b44a.js" crossorigin="anonymous"></script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <!--Navigation bar-->
+    <div id="nav-placeholder"></div>
+    <script>
+        $(function(){
+            $("#nav-placeholder").load("nav.html");
+        });
+    </script>
+    <!--Navigation bar-->
+
+    <!--Page-->
+    <div id="page-header" class="page-header">
+        <img id="magic-logo" style="display: none;" src="images/logo.png">
+        <h1 id="primary-header-title">Rooster Welding</h1>
+        <h2 id="secondary-header-title">Welding · Fabricating · Ironworking</h2>
+        <div class="header-buttons">
+            <button class="book-now-button" role="button" onclick="location.href='/roosterwelding/contact-us.html'">Contact Us</button>
+        </div>   
+    </div>
+    <!--Page-->
+</body>
+<!--Footer-->
+<footer>
+    <div id="footer-placeholder"></div>
+    <script>
+        $(function(){
+            $("#footer-placeholder").load("footer.html");
+        });
+    </script>
+</footer>
+<!--Footer-->
+</html>
