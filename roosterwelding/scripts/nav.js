@@ -68,7 +68,7 @@ $('document').ready(screenChange);
 function screenChange () {
     let pageHasScrolledDown15 = window.pageYOffset >= 15;
     let pageHasScrolledDown100 = window.pageYOffset >= 100;
-    let onHomePage = window.location.pathname == "/roosterwelding/home.html" || window.location.pathname == "/";
+    let onHomePage = window.location.pathname == "/roosterwelding/home.html" || window.location.pathname == "/roosterwelding/home";
     let isMobileView = window.innerWidth < hamburgerScreenWidth;
     let isRounded = !pageHasScrolledDown15;
     let isRectangle = onHomePage && pageHasScrolledDown100 || !onHomePage && pageHasScrolledDown15;
@@ -110,7 +110,7 @@ function screenChange () {
             $("#page-header").addClass("mobile-home-page-header");
 
             $("#primary-header-title").text("Rooster Welding");
-            $("#secondary-header-title").text("Welding · Fabricating · Ironworking");
+            $("#secondary-header-title").text("Welding - Fabricating - Ironworking");
         } else {
             $("#primary-header-title").removeClass("small-primary-header-title");
             $("#primary-header-title").addClass("large-primary-header-title");
@@ -118,7 +118,7 @@ function screenChange () {
             $("#page-header").removeClass("mobile-home-page-header");
 
             $("#primary-header-title").text("Rooster Welding");
-            $("#secondary-header-title").text("Welding · Fabricating · Ironworking");
+            $("#secondary-header-title").text("Welding - Fabricating - Ironworking");
         }
     } else {
         $("#primary-header-title").removeClass("small-primary-header-title");
