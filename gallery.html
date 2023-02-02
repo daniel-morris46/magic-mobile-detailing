@@ -15,9 +15,16 @@
 <link rel="stylesheet" href="styles/pages/gallery.css">
 
 <link rel="stylesheet" href="styles/libraries/lightbox.min.css">
-
 <script src="scripts/libraries/lightbox-plus-jquery.min.js"></script>
+
+
+<link rel="stylesheet" href="styles/libraries/twentytwenty-no-compass.css">
+<link rel="stylesheet" href="styles/libraries/twentytwenty.css">
+<script src="scripts/libraries/jquery.event.move.js"></script>
+<script src="scripts/libraries/jquery.twentytwenty.js"></script>
+
 <script src="scripts/price-section.js"></script>
+<script src="scripts/gallery.js"></script>
 
 <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
 <script src="https://kit.fontawesome.com/ce33f5b44a.js" crossorigin="anonymous"></script>
@@ -41,8 +48,8 @@
     <h2 class="section-heading">Here's some of our best transformations</h2>
     <div class="section gallery-section">
         <div class="gallery">
-            <a href="images/galleries/interior-detail/before/3.JPEG" data-lightbox="gallery"><img src="images/galleries/interior-detail/before/3-small.JPEG"></a>
-            <a href="images/galleries/interior-detail/after/4.JPEG" data-lightbox="gallery"><img src="images/galleries/interior-detail/after/4-small.jpg"></a>
+            <a href="images/galleries/interior-detail/before/3.JPEG" data-lightbox="gallery"><img src="images/galleries/interior-detail/before/3-small.jpg"></a>
+            <a href="images/galleries/interior-detail/after/4.JPEG" onclick="clickedImage()" data-lightbox="gallery"><img src="images/galleries/interior-detail/after/4-small.jpg"></a>
         </div>
     </div>
 
