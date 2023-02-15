@@ -1,0 +1,196 @@
+.page-header {
+    background-image: url('../../images/1.PNG');
+    background-position: center;
+    background-size: cover;
+}
+
+.header-buttons {
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    column-gap: 40px;
+}
+
+.header-button {
+    border-radius: 8px;
+    border-style: none;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    flex-shrink: 0;
+    font-size: 16px;
+    font-weight: 500;
+    height: 4rem;
+    padding: 0 1.6rem;
+    text-align: center;
+    text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+    transition: all .5s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.header-button:hover {
+  transition-duration: .1s;
+}
+
+.header-button-1 {
+  background-color: rgb(114, 164, 240);
+}
+
+.header-button-1:hover {
+  box-shadow: rgba(114, 164, 240, 0.5) 0 1px 30px;
+}
+
+.contact-container {
+    width: min(80%, 800px);
+    margin: -30px auto 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(214, 214, 214);
+    border-radius: 10px;
+    min-height: 153px;
+    flex-wrap: wrap;
+    padding: 10px 30px;
+}
+
+.phone-container {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    width: 225px;
+}
+
+.phone-icon {
+    font-size: 2.5em;
+    color: rgb(44, 85, 239);
+}
+
+.phone-text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.phone-title {
+    font-size: 1.4em;
+    display: block;
+}
+
+.phone-text {
+    display: block;
+}
+
+.working-hours-container {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    width: 225px;
+}
+
+.working-hours-icon {
+    font-size: 2.5em;
+}
+
+.working-hours-text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.working-hours-title {
+    font-size: 1.4em;
+    display: block;
+}
+
+.working-hours-text {
+    display: block;
+}
+
+.location-container {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.location-icon {
+    font-size: 2.5em;
+}
+
+.location-text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.location-title {
+    display: block;
+    font-size: 1.4em;
+}
+
+.location-text {
+    display: block;
+    font-size: 1em;
+}
+
+.full-interior-detail-section {
+    min-height: 400px;
+}
+
+.full-interior-detail-image {
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+}
+
+.full-interior-text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.wash-and-wax-section {
+    min-height: 400px;
+}
+
+.wash-and-wax-image {
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+}
+
+.paint-correction-text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+
+.van-image {
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+}
+
+.van-text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.service-locations-list {
+    margin-top: auto;
+    margin-top: 30px;
+}

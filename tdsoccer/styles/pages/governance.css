@@ -1,0 +1,25 @@
+.page-header {
+    background-image: url('../../images/1.PNG');
+    background-position: center;
+    background-size: cover;
+}
+
+.governance-table {
+    margin: auto;
+    width: 800px;
+    border-collapse: collapse;
+}
+
+.governance-table tr {
+    text-align: left;
+}
+
+.governance-table th {
+    border: 1px solid lightgray;
+    padding: 20px;
+}
+
+.governance-table td {
+    border: 1px solid lightgray;
+    padding: 20px;
+}

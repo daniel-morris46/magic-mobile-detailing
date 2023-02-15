@@ -1,0 +1,26 @@
+.faq-section {
+    background-color: aliceblue;
+    padding: 1px 0 20px 0;
+    margin: 70px 0 0 0;
+}
+
+.faq-title {
+
+}
+
+.faq-questions {
+    margin: auto;
+    width: min(80%, 1300px);
+}
+
+.faq-question-container {
+    padding: 20px 0;
+}
+
+.faq-question {
+    padding-bottom: 10px;
+}
+
+.faq-answer {
+    line-height: 1.5em;
+}

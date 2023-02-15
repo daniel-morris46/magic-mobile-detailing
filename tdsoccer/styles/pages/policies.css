@@ -1,0 +1,21 @@
+.page-header {
+    background-image: url('../../images/1.PNG');
+    background-position: center;
+    background-size: cover;
+}
+
+.bullets {
+    padding-left: 40px;
+}
+
+.bullets li {
+    list-style: disc;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.policy-img-1 {
+    width: 500px;
+}

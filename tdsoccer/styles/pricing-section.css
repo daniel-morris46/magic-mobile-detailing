@@ -1,0 +1,61 @@
+.pricing-seciton {
+
+}
+
+.pricing-header {
+
+}
+
+.pricing-secondary-header {
+    text-align: center;
+}
+
+.price-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding-top: 40px;
+}
+
+.price-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 300px;
+    min-height: 200px;
+    gap: 20px;
+    box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 23%);
+    cursor: pointer;
+}
+
+.price-box-lg {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 320px;
+    min-height: 250px;
+    gap: 20px;
+    box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 23%);
+    cursor: pointer;
+}
+
+.selected-price-box {
+    background-color: rgb(231, 149, 111); 
+    color: white;
+}
+
+.price-size {
+    font-size: 1.5em;
+}
+
+.price-example {
+    font-size: 0.9em;
+}
+
+.price-range {
+    font-size: 1.5em;
+}
