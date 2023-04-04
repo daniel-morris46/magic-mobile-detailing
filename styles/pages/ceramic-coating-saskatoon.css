@@ -1,0 +1,19 @@
+.page-header {
+    background-image: url('/images/galleries/hand-car-wash/13.jpg');
+    background-position-y: 35%;
+}
+
+.benefits {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    column-gap: 50px;
+}
+
+.benefits li {
+      list-style: inside;
+}
+
+.pricing-secondary-header {
+    padding-top: 15px;
+}

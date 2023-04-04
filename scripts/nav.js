@@ -69,7 +69,7 @@ function screenChange () {
     
     let pageHasScrolledDown15 = window.pageYOffset >= 15;
     let pageHasScrolledDown100 = window.pageYOffset >= 100;
-    let onHomePage = window.location.pathname == "/index.html" || window.location.pathname == "/";
+    let onHomePage = window.location.pathname == "/index.html" || window.location.pathname == "/" || window.location.pathname == "/qrcode" || window.location.pathname == "/qrcode.html";
     let isMobileView = window.innerWidth < hamburgerScreenWidth;
     let isRounded = !pageHasScrolledDown15;
     let isRectangle = onHomePage && pageHasScrolledDown100 || !onHomePage && pageHasScrolledDown15;

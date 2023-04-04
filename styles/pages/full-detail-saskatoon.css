@@ -1,0 +1,20 @@
+.page-header {
+    background-image: url('/images/galleries/interior-detail/after/20.JPEG');
+    background-size: cover;
+}
+
+.page-header {
+    background-position-y: 30%;
+}
+
+.included-services {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    column-gap: 50px;
+}
+
+.included-services li {
+    flex-basis: 300px;
+    list-style: inside;
+}
