@@ -1,7 +1,10 @@
 .page-header {
-    background-image: url('/images/Saskatoon2.webp');
-    background-position: center;
-    background-size: cover;
+    background-image: url('/images/Saskatoon3.webp');
+    background-position-y: 70%;
+}
+
+#secondary-header-title {
+    text-shadow: #000 2px 0 10px;
 }
 
 .header-buttons {

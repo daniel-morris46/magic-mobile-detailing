@@ -59,3 +59,18 @@
 .price-range {
     font-size: 1.5em;
 }
+
+.price {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.price-starts {
+    font-size: 0.8em;
+}
+
+.price-text {
+    font-size: 1.5em;
+}
