@@ -1,0 +1,19 @@
+.page-header {
+    background-image: url('/images/paperwork.jpeg');
+    background-position: center;
+    background-position-y: 20%;
+    background-size: cover;
+}
+.section ul {
+    padding-left: 20px;
+}
+.section li {
+    list-style: inside;
+    padding-bottom: 20px;
+    padding-left: 10px;
+}
+
+.section ul p {
+    padding-bottom: 10px;
+    padding-left: 30px;
+}

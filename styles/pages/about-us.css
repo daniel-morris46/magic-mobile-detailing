@@ -1,0 +1,20 @@
+.page-header {
+    background-image: url('/images/about-us-header-small.jpeg');
+    background-position: center;
+    background-position-y: 20%;
+    background-size: cover;
+}
+
+.detailer {
+    height: 400px;
+    width: 300px;
+}
+
+.setup-image {
+    height: 400px;
+    width: 300px;
+}
+
+.setup-section {
+    padding-bottom: 30px;
+}
