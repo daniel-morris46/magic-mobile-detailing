@@ -1,6 +1,8 @@
 .page-header {
-    background-image: url('/images/Saskatoon3.webp');
+    background-image: url('/images/home-header-tall.jpg');
     background-position-y: 70%;
+    min-height: 780px;
+    justify-content: flex-start;
 }
 
 #secondary-header-title {
