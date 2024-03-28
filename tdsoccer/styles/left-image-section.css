@@ -22,9 +22,12 @@
   }
 
 .left-image-section-text-container {
+    display: flex;
+    flex-direction: column;
     max-width: 66%;
     min-width: 300px;
     gap: 20px;
+    line-height: 2em;
 }
 
 .left-image-section-image-container img {

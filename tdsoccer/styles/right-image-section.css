@@ -16,8 +16,15 @@
 }
 
 
+.right-image-section-image-container img {
+    border-radius: 10px;
+    max-width: 500px;
+}
+
+
 .right-images-container img {
     border-radius: 10px;
+    max-width: 400px;
 }
 
 
@@ -32,9 +39,8 @@
     min-width: 300px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
     gap: 20px;
+    line-height: 2em;
 }
 
 

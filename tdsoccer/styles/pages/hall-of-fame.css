@@ -1,0 +1,98 @@
+.page-header {
+    background-image: url('../../images/stadium.avif');
+    background-position: center;
+    background-size: cover;
+}
+
+
+.mobile-items {
+    padding-bottom: 50px;
+}
+.mobile-header-img {
+    width: 200px;
+}
+
+.mobile-page-header {
+    padding: 20px 30px 60px 30px;
+    justify-content: flex-start;
+}
+
+.fame-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.fame-container {
+    width: 300px;
+    height: 300px;
+    background-image: url('../../images/hof-bg.png');
+}
+
+.fame-container:hover {
+    cursor: pointer;
+}
+
+.fame-container:hover .fame-player {
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+}
+
+.fame-container:hover .fame-button {
+    animation: fadeIn .5s;
+    visibility: visible;
+}
+
+.fame-button {
+    visibility: hidden;
+    margin-top: 5px;
+    transition: filter .5s ease-in-out;
+    animation: fadeOut .5s;
+}
+
+.fame-player {
+    width: 260px;
+    height: 260px;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    transition: filter .5s ease-in-out;
+    position: relative;
+    top: 40px;
+    left: 60px;
+}
+
+.fame-container:hover .fame-text {
+    transform: translateY(-40px);
+}
+
+.fame-text {
+    position: relative;
+    bottom: 60px;
+    left: 15px;
+    transition: transform 250ms;
+}
+
+.fame-text h4 {
+    font-size: 30px;
+    color: white;
+    text-shadow: 3px 3px 3px black;
+}
+
+.fame-text p {
+    color: white;
+    padding-top: 8px;
+    font-size: 18px;
+    text-shadow: 2px 2px 2px black;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+@keyframes fadeOut {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+  }

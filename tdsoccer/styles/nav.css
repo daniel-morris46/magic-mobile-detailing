@@ -6,17 +6,14 @@
 
 .navbar {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 1rem 1.5rem;
     position: absolute;
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(4, 104, 12, 0.9);
     width: 100%;
     min-width: 300px;
     min-height: 75px;
-    width: calc(100% - 30px);
-    margin: 15px;
-    border-radius: 10px;
     box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 23%);
     z-index: 1000;
 }
@@ -31,12 +28,10 @@
 }
 
 .rounded {
-    position: fixed;
 }
 
 .rectangle {
-    position: fixed;
-    background-color: rgba(255, 255, 255, 1);
+    background-color: rgba(4, 104, 12, 0.9);
     margin: 0;
     width: 100%;
     border-radius: 0;
@@ -48,6 +43,7 @@
     border-radius: 50%;
     position: fixed;
     right: 0;
+    margin: 15px;
 }
 
 .hamburger {
@@ -68,10 +64,31 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 25px;
+}
+
+.logo-nav-item {
+    height: 60px;
 }
 
 .nav-item {
+    padding: 10px;
+    height: 35px;
+}
+
+.left-items {
+    display: flex;
+    justify-content: space-between;
+    width: 380px;
+}
+
+.right-items {
+    display: flex;
+    justify-content: space-between;
+    width: 380px;
+}
+
+.logo-nav-img {
+    width: 200px;
 }
 
 .hidden-nav-item {
@@ -80,7 +97,7 @@
 
 .nav-link {
     font-weight: 400;
-    color: #475569;
+    color: #d1d1d1;
 }
 
 .nav-link:hover{
@@ -91,7 +108,22 @@
     width: 180px;
 }
 
-@media only screen and (max-width: 1160px) {
+.social-logos {
+    position: absolute;
+    right: 10px;
+    width: 140px;
+}
+
+
+@media only screen and (max-width: 1300px) {
+    .social-logos {
+        display: none;
+    }
+
+}
+
+
+@media only screen and (max-width: 1300px) {
     .nav-menu {
         position: fixed;
         left: 100%;
@@ -103,12 +135,15 @@
         text-align: center;
         transition-duration: 0.3s;
         transition-property: all;
-        box-shadow:
-            0 10px 27px rgba(0, 0, 0, 0.05);
+        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
     }
 
     .nav-menu.active {
         left: 0;
+    }
+
+    .nav-link {
+        color: black;
     }
 
     .nav-item {

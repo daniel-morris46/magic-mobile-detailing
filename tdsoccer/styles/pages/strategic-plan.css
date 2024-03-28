@@ -1,0 +1,18 @@
+.page-header {
+    background-image: url('../../images/action3.JPG');
+    background-position: center;
+    background-size: cover;
+}
+
+.mobile-items {
+    padding-bottom: 50px;
+}
+
+.mobile-header-img {
+    width: 200px;
+}
+
+.mobile-page-header {
+    padding: 20px 30px 60px 30px;
+    justify-content: flex-start;
+}

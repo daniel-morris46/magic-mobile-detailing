@@ -1,8 +1,6 @@
 .page-header {
-    background-image: url('/images/home-header-tall.jpg');
-    background-position-y: 70%;
-    min-height: 780px;
-    justify-content: flex-start;
+    background-image: url('/images/home-header-small.webp');
+    background-position-y: 50%;
 }
 
 #secondary-header-title {

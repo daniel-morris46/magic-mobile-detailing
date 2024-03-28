@@ -1,0 +1,8 @@
+.page-header {
+    background-image: url('/images/heater.jpeg');
+    background-size: cover;
+}
+
+.page-header {
+    background-position-y: 20%;
+}

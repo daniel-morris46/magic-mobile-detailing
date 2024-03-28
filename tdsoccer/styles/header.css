@@ -17,11 +17,9 @@
   font-weight: 70;
   text-align: center; 
   width: 100%;
-}
-
-.large-primary-header-title {
   -webkit-text-stroke: 2px black;
-  font-size: 4.4em;
+  font-size: 3.9em;
+  max-width: 800px;
 }
 
 .small-primary-header-title {
@@ -37,4 +35,13 @@
   text-align: center;
   width: 100%;
   padding-top: 10px;
+}
+
+.socm-logo {
+  font-size: 25px;
+  color: black;
+  background-color: white;
+  padding: 12px;
+  border-radius: 14px;
+  margin: 10px;
 }

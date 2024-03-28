@@ -1,4 +1,4 @@
-const hamburgerScreenWidth = 1160;
+const hamburgerScreenWidth = 1300;
 
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
@@ -63,30 +63,58 @@ window.onresize = () => {
 
 screenChange();
 
-$('document').ready(screenChange);
-
 function screenChange () {
     let pageHasScrolledDown15 = window.pageYOffset >= 15;
     let pageHasScrolledDown100 = window.pageYOffset >= 100;
     let onHomePage = window.location.pathname == "/tdsoccer/home.html" || window.location.pathname == "/tdsoccer/home";
     let isMobileView = window.innerWidth < hamburgerScreenWidth;
     let isRounded = !pageHasScrolledDown15;
-    let isRectangle = onHomePage && pageHasScrolledDown100 || !onHomePage && pageHasScrolledDown15;
-    let isCircle = isMobileView && onHomePage && !pageHasScrolledDown100;
+    let isCircle = isMobileView && !pageHasScrolledDown100;
+    
+    var pageHeader = document.getElementById("page-header");
     if (isRounded) {
         navbar.classList.add("rounded");
         navbar.classList.remove("rectangle");
-        navbar.classList.remove("circle");
-    }
-    if (isRectangle) {
-        navbar.classList.remove("rounded");
-        navbar.classList.add("rectangle");
         navbar.classList.remove("circle");
     }
     if (isCircle) {
         navbar.classList.remove("rounded");
         navbar.classList.remove("rectangle");
         navbar.classList.add("circle");
+    }
+
+    if (isMobileView) {
+        pageHeader && pageHeader.classList.add("mobile-page-header");
+
+        $(".left-items").each(function() {
+            $(this).hide();
+        });
+        $(".logo-nav-item").each(function() {
+            $(this).hide();
+        });
+        
+        $(".right-items").each(function() {
+            $(this).hide();
+        });
+        $(".mobile-items").each(function() {
+            $(this).show();
+        });
+    } else {
+        pageHeader && pageHeader.classList.remove("mobile-page-header");
+
+        $(".left-items").each(function() {
+            $(this).show();
+        });
+        $(".logo-nav-item").each(function() {
+            $(this).show();
+        });
+        
+        $(".right-items").each(function() {
+            $(this).show();
+        });
+        $(".mobile-items").each(function() {
+            $(this).hide();
+        });
     }
 
     if (isCircle) {
@@ -101,26 +129,26 @@ function screenChange () {
         $("#magic-logo").hide();
     }
 
-    if (onHomePage) {
-        if (isMobileView) {
-            $("#primary-header-title").removeClass("large-primary-header-title");
-            $("#primary-header-title").addClass("small-primary-header-title");
+    // if (onHomePage) {
+    //     if (isMobileView) {
+    //         $("#primary-header-title").removeClass("large-primary-header-title");
+    //         $("#primary-header-title").addClass("small-primary-header-title");
 
-            $("#page-header").addClass("mobile-home-page-header");
+    //         $("#page-header").addClass("mobile-home-page-header");
 
-            $("#primary-header-title").text("TDsoccer");
-            $("#secondary-header-title").text("Futsal Academy");
-        } else {
-            $("#primary-header-title").removeClass("small-primary-header-title");
-            $("#primary-header-title").addClass("large-primary-header-title");
+    //         $("#primary-header-title").text("TDsoccer");
+    //         $("#secondary-header-title").text("Futsal Academy");
+    //     } else {
+    //         $("#primary-header-title").removeClass("small-primary-header-title");
+    //         $("#primary-header-title").addClass("large-primary-header-title");
 
-            $("#page-header").removeClass("mobile-home-page-header");
+    //         $("#page-header").removeClass("mobile-home-page-header");
 
-            $("#primary-header-title").text("TDsoccer");
-            $("#secondary-header-title").text("Futsal Academy");
-        }
-    } else {
-        $("#primary-header-title").removeClass("small-primary-header-title");
-        $("#primary-header-title").addClass("large-primary-header-title");
-    }
+    //         $("#primary-header-title").text("TDsoccer");
+    //         $("#secondary-header-title").text("Futsal Academy");
+    //     }
+    // } else {
+    //     $("#primary-header-title").removeClass("small-primary-header-title");
+    //     $("#primary-header-title").addClass("large-primary-header-title");
+    // }
 };

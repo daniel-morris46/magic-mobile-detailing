@@ -1,8 +1,95 @@
+
+
+
 .page-header {
-    background-image: url('../../images/1.PNG');
+    background-image: url('../../images/action5.JPG');
     background-position: center;
+    background-position-y: 20%;
     background-size: cover;
 }
+
+.mobile-header-img {
+    width: 200px;
+}
+
+.mobile-page-header {
+    padding: 20px 30px 60px 30px;
+}
+
+
+.home-middle-section {
+    background-image: url('../../images/coach.JPG');
+    background-position: center;
+    background-position-y: 20%;
+    background-size: cover;
+    color: white;
+}
+
+.home-middle-section .section {
+    min-height: 500px;
+    justify-content: center;
+}
+
+.home-middle-section .section-heading {
+    color: white;
+    font-size: 60px;
+    line-height: 60px;
+    margin: 0;
+}
+
+.home-middle-section p {
+    text-align: center;
+}
+
+.home-group-section {
+    background-image: url('../../images/group.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    width: min(800px, 100);
+    margin: auto;
+}
+
+.home-group-section .section {
+    min-height: 500px;
+    justify-content: center;
+    gap: 50px;
+}
+
+.home-group-section .section-heading {
+    color: white;
+    font-size: 60px;
+    line-height: 60px;
+    -webkit-text-stroke: 0.01mm black;
+}
+
+.home-photos-section {
+    display: flex;
+    justify-content: center;
+}
+
+.home-photos-section img {
+    object-fit: cover;
+    padding: 20px;
+    width: 400px;
+    height: 400px;
+}
+
+#what-is-heading {
+    font-size: 70px;
+}
+
+.what-is-section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.what-is-section p {
+    flex-basis: 600px;
+    padding: 15px;
+}
+
 
 .header-buttons {
     width: 100%;
@@ -193,4 +280,42 @@
 .service-locations-list {
     margin-top: auto;
     margin-top: 30px;
+}
+
+.side-images-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 40px;
+    flex-wrap: wrap;
+    padding-top: 10px;
+}
+
+@media (min-width:1090px) {
+    .side-images-section {
+        flex-wrap: nowrap;
+    }
+}
+
+.side-images-center-container {
+    min-width: 400px;
+    max-width: 850px;
+}
+
+.canada-soccer-logo {
+    width: 200px;
+}
+
+.ssa-logo {
+    width: 200px;
+}
+
+.mobile-social-logos {
+    padding-top: 10px;
+}
+
+@media (min-width:1300px) {
+    .mobile-social-logos {
+        display: none;
+    }
 }

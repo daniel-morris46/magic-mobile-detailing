@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Hall of Fame | TDsoccer Futsal Academy</title>
+<link rel="icon" type="image/x-icon" href="images/favicon.ico">
+<link rel="stylesheet" href="styles/global.css">
+
+<link rel="stylesheet" href="styles/header.css">
+<link rel="stylesheet" href="styles/text-section.css">
+<link rel="stylesheet" href="styles/gallery-section.css">
+<link rel="stylesheet" href="styles/buttons.css">
+<link rel="stylesheet" href="styles/right-image-section.css">
+
+<link rel="stylesheet" href="styles/pages/hall-of-fame.css">
+
+<link rel="stylesheet" href="styles/libraries/lightbox.min.css">
+
+<script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script src="scripts/libraries/lightbox-plus-jquery.min.js"></script>
+<script src="https://kit.fontawesome.com/ce33f5b44a.js" crossorigin="anonymous"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <!--Navigation bar-->
+    <div id="nav-placeholder"></div>
+    <script>
+        $(function(){
+            $("#nav-placeholder").load("nav.html");
+        });
+    </script>
+    <!--Navigation bar-->
+
+    <!--Page-->
+    <div id="page-header" class="page-header">
+        <div class="mobile-items">
+            <a href="/tdsoccer/home.html">
+                <img class="mobile-header-img" src="images/logo.png">
+            </a>
+        </div>
+        <h1 id="primary-header-title">Hall of Fame</h1>
+        <h2 id="secondary-header-title"></h2>
+    </div>
+
+    <div class="section fame-section">
+        <a href="jayda.html">
+            <div class="fame-container">
+                <img class="fame-player" src="images/fame1.png">
+                <div class="fame-text">
+                    <h4>Jayda Codling</h4>
+                    <p>Inducted in 2019</p>
+                    <button class="fame-button secondary-button" role="button">View Profile</button>
+                </div>
+            </div>
+        </a>
+        <div class="fame-container">
+            <img class="fame-player" src="images/fame2.png">
+            <div class="fame-text">
+                <h4>Jamie Forester</h4>
+                <p>Inducted in 2014</p>
+                <button class="fame-button secondary-button" role="button">View Profile</button>
+            </div>
+        </div>
+        <div class="fame-container">
+            <img class="fame-player" src="images/fame3.png">
+            <div class="fame-text">
+                <h4>Michelle Stevens</h4>
+                <p>Inducted in 2021</p>
+                <button class="fame-button secondary-button" role="button">View Profile</button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!--Page-->
+    
+</body>
+<!--Footer-->
+<footer>
+    <div id="footer-placeholder"></div>
+    <script>
+        $(function(){
+            $("#footer-placeholder").load("footer.html");
+        });
+    </script>
+</footer>
+<!--Footer-->
+</html>

@@ -1,19 +1,24 @@
 .page-header {
-    background-image: url('../../images/1.PNG');
-    background-position: center;
+    background-image: url('../../images/futsal.webp');
+    background-position: bottom;
     background-size: cover;
 }
 
-.truck-image {
-    width: 300px;
+.mobile-items {
+    padding-bottom: 50px;
 }
 
-.truck-section {
-    padding-bottom: 30px;
+.mobile-header-img {
+    width: 200px;
 }
 
-.text-container {
+.mobile-page-header {
+    padding: 20px 30px 60px 30px;
+    justify-content: flex-start;
+}
+
+.youtube-embed {
+    margin: auto;
+    width: min(80%, 800px);
     display: flex;
-    flex-direction: column;
-    gap: 10px;
 }
