@@ -105,21 +105,11 @@ function screenChange () {
 
     if (onHomePage) {
         if (isMobileView) {
-            $("#primary-header-title").removeClass("large-primary-header-title");
-            $("#primary-header-title").addClass("small-primary-header-title");
-
             $("#page-header").addClass("mobile-home-page-header");
-
             $("#primary-header-title").text("Mobile Detailing");
-            $("#secondary-header-title").text("Saskatoon's Auto Detailing Solution");
         } else {
-            $("#primary-header-title").removeClass("small-primary-header-title");
-            $("#primary-header-title").addClass("large-primary-header-title");
-
+            $("#primary-header-title").text("");
             $("#page-header").removeClass("mobile-home-page-header");
-
-            $("#primary-header-title").text("Saskatoon's Auto Detailing Solution");
-            $("#secondary-header-title").text("Full interior cleaning, exterior hand wash and wax, paint correction and more");
         }
     } else {
         $("#primary-header-title").removeClass("small-primary-header-title");

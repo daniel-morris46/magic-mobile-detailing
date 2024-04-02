@@ -18,3 +18,7 @@
     flex-basis: 300px;
     list-style: inside;
 }
+
+.header-buttons {
+    padding-top: 30px;
+}

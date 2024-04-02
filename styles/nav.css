@@ -22,8 +22,13 @@
 }
 
 .mobile-home-page-header {
-    padding: 40px 30px 60px 30px;
-    min-height: 480px;
+    padding: 30px 30px 50px 30px;
+    min-height: 440px;
+    background-position-y: 50%;
+}
+
+.mobile-home-page-header .header-buttons {
+    margin-top: auto;
 }
 
 #magic-logo {

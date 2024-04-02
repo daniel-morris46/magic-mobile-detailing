@@ -23,4 +23,40 @@ $(document).ready(function(){
         $("#lg-price-box").removeClass("selected-price-box");
         $("#xl-price-box").addClass("selected-price-box");
     });
+    
+    $("#price-box-1").click(function(event){
+        $("#price-box-1").addClass("selected-price-box");
+        $("#price-box-2").removeClass("selected-price-box");
+        $("#price-box-3").removeClass("selected-price-box");
+        $("#price-box-4").removeClass("selected-price-box");
+        $("#price-box-5").removeClass("selected-price-box");
+    });
+    $("#price-box-2").click(function(event){
+        $("#price-box-1").removeClass("selected-price-box");
+        $("#price-box-2").addClass("selected-price-box");
+        $("#price-box-3").removeClass("selected-price-box");
+        $("#price-box-4").removeClass("selected-price-box");
+        $("#price-box-5").removeClass("selected-price-box");
+    });
+    $("#price-box-3").click(function(event){
+        $("#price-box-1").removeClass("selected-price-box");
+        $("#price-box-2").removeClass("selected-price-box");
+        $("#price-box-3").addClass("selected-price-box");
+        $("#price-box-4").removeClass("selected-price-box");
+        $("#price-box-5").removeClass("selected-price-box");
+    });
+    $("#price-box-4").click(function(event){
+        $("#price-box-1").removeClass("selected-price-box");
+        $("#price-box-2").removeClass("selected-price-box");
+        $("#price-box-3").removeClass("selected-price-box");
+        $("#price-box-4").addClass("selected-price-box");
+        $("#price-box-5").removeClass("selected-price-box");
+    });
+    $("#price-box-5").click(function(event){
+        $("#price-box-1").removeClass("selected-price-box");
+        $("#price-box-2").removeClass("selected-price-box");
+        $("#price-box-3").removeClass("selected-price-box");
+        $("#price-box-4").removeClass("selected-price-box");
+        $("#price-box-5").addClass("selected-price-box");
+    });
 });

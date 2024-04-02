@@ -1,9 +1,18 @@
 .page-header {
-    background-image: url('/images/galleries/headlights/5-md.jpg');
+    background-image: url('/images/galleries/headlights/polish.webp');
     background-position: center;
     background-size: cover;
 }
 
 #primary-header-title {
     font-size: 3.8em;
+}
+
+.gallery-thumbnail {
+    width: 300px;
+    height: 200px;
+}
+
+.centered-image-section img {
+    width: min(100%, 800px);
 }

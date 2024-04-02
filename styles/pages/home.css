@@ -1,6 +1,6 @@
 .page-header {
     background-image: url('/images/home-header-small.webp');
-    background-position-y: 50%;
+    background-position-y: 80%;
 }
 
 #secondary-header-title {
@@ -9,7 +9,7 @@
 
 .header-buttons {
     width: 100%;
-    margin-top: 30px;
+    margin-top: auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -196,4 +196,39 @@
 .service-locations-list {
     margin-top: auto;
     margin-top: 30px;
+}
+
+.home-middle-section {
+    background-image: url('../../images/porsche.PNG');
+    background-position: center;
+    background-position-y: 50%;
+    background-size: cover;
+    color: white;
+    max-width: 1100px;
+    margin: auto;
+    text-shadow: 2px 2px 2px black;
+}
+
+.home-middle-section .section {
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    justify-content: center;
+}
+
+.home-middle-section .section-heading {
+    color: white;
+    font-size: 50px;
+    line-height: 60px;
+    margin: 0;
+}
+
+.home-middle-section p {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.top-text-heading {
+    font-size: 2.5em;
 }

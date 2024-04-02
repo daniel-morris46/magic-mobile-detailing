@@ -17,6 +17,8 @@
     align-items: center;
     gap: 50px;
     padding-top: 40px;
+    max-width: 1100px;
+    margin: auto;
 }
 
 .price-box {
