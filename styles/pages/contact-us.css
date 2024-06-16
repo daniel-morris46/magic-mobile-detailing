@@ -36,3 +36,7 @@
 .required-icon {
     color: red;
 }
+
+textarea {
+    font-family: sans-serif;
+}

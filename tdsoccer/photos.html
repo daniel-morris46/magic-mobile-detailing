@@ -7,7 +7,6 @@
 
 <link rel="stylesheet" href="styles/header.css">
 <link rel="stylesheet" href="styles/text-section.css">
-<link rel="stylesheet" href="styles/pricing-section.css">
 <link rel="stylesheet" href="styles/gallery-section.css">
 <link rel="stylesheet" href="styles/buttons.css">
 
@@ -17,7 +16,6 @@
 
 <script src="scripts/libraries/lightbox-plus-jquery.min.js"></script>
 <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
-<script src="scripts/price-section.js"></script>
 <script src="https://kit.fontawesome.com/ce33f5b44a.js" crossorigin="anonymous"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
@@ -42,30 +40,37 @@
     </div>
 
     <div class="section gallery-section">
-        <div class="gallery">
-            <a href="images/photos/1.jpg" data-lightbox="gallery"><img src="images/photos/1-small.jpg"></a>
-            <a href="images/photos/2.jpg" data-lightbox="gallery"><img src="images/photos/2-small.jpg"></a>
-            <a href="images/photos/3.jpg" data-lightbox="gallery"><img src="images/photos/3-small.jpg"></a>
-            <a href="images/photos/5.jpg" data-lightbox="gallery"><img src="images/photos/5.jpg"></a>
-            <a href="images/photos/7.jpg" data-lightbox="gallery"><img src="images/photos/7.jpg"></a>
-            <a href="images/photos/8.jpg" data-lightbox="gallery"><img src="images/photos/8.jpg"></a>
-            <a href="images/photos/9.jpg" data-lightbox="gallery"><img src="images/photos/9.jpg"></a>
-            <a href="images/photos/10.jpg" data-lightbox="gallery"><img src="images/photos/10.jpg"></a>
-            <a href="images/photos/11.jpg" data-lightbox="gallery"><img src="images/photos/11.jpg"></a>
-            <a href="images/photos/12.jpg" data-lightbox="gallery"><img src="images/photos/12.jpg"></a>
-            <a href="images/photos/13.jpg" data-lightbox="gallery"><img src="images/photos/13.jpg"></a>
-            <a href="images/photos/14.jpg" data-lightbox="gallery"><img src="images/photos/14.jpg"></a>
-            <a href="images/photos/15.jpg" data-lightbox="gallery"><img src="images/photos/15.jpg"></a>
-            <a href="images/photos/16.jpg" data-lightbox="gallery"><img src="images/photos/16.jpg"></a>
-            <a href="images/photos/17.jpg" data-lightbox="gallery"><img src="images/photos/17.jpg"></a>
-            <a href="images/action.JPG" data-lightbox="gallery"><img src="images/action.JPG"></a>
-            <a href="images/action2.JPG" data-lightbox="gallery"><img src="images/action2.JPG"></a>
-            <a href="images/action3.JPG" data-lightbox="gallery"><img src="images/action3.JPG"></a>
-            <a href="images/action4.JPG" data-lightbox="gallery"><img src="images/action4.JPG"></a>
-            <a href="images/action5.JPG" data-lightbox="gallery"><img src="images/action5.JPG"></a>
-            <a href="images/action6.JPG" data-lightbox="gallery"><img src="images/action6.JPG"></a>
-            <a href="images/action7.JPG" data-lightbox="gallery"><img src="images/action7.JPG"></a>
-            <a href="images/action8.JPG" data-lightbox="gallery"><img src="images/action8.JPG"></a>
+        <div id="wrap" class="gallery">
+            <a class="photo-thumbnail" href="images/photos/1.jpg" data-lightbox="gallery"><img src="images/photos/1-small.jpg"></a>
+            <a class="photo-thumbnail" href="images/photos/2.jpg" data-lightbox="gallery"><img src="images/photos/2-small.jpg"></a>
+            <a class="photo-thumbnail" href="images/photos/3.jpg" data-lightbox="gallery"><img src="images/photos/3-small.jpg"></a>
+            <a class="photo-thumbnail" href="images/photos/5.jpg" data-lightbox="gallery"><img src="images/photos/5.jpg"></a>
+            <a class="photo-thumbnail" href="images/photos/7.jpg" data-lightbox="gallery"><img src="images/photos/7.jpg"></a>
+            <a class="photo-thumbnail" href="images/photos/8.jpg" data-lightbox="gallery"><img src="images/photos/8.jpg"></a>
+            <a class="photo-thumbnail" href="images/photos/9.jpg" data-lightbox="gallery"><img src="images/photos/9.jpg"></a>
+            <a class="photo-thumbnail" href="images/photos/10.jpg" data-lightbox="gallery"><img src="images/photos/10.jpg"></a>
+            <a class="photo-thumbnail" href="images/photos/11.jpg" data-lightbox="gallery"><img src="images/photos/11.jpg"></a>
+            <a class="photo-thumbnail" href="images/photos/12.jpg" data-lightbox="gallery"><img src="images/photos/12.jpg"></a>
+            <a class="photo-thumbnail" href="images/photos/13.jpg" data-lightbox="gallery"><img src="images/photos/13.jpg"></a>
+            <a class="photo-thumbnail" href="images/photos/14.jpg" data-lightbox="gallery"><img src="images/photos/14.jpg"></a>
+            <a class="photo-thumbnail" href="images/photos/15.jpg" data-lightbox="gallery"><img src="images/photos/15.jpg"></a>
+            <a class="photo-thumbnail" href="images/photos/16.jpg" data-lightbox="gallery"><img src="images/photos/16.jpg"></a>
+            <a class="photo-thumbnail" href="images/photos/17.jpg" data-lightbox="gallery"><img src="images/photos/17.jpg"></a>
+            <a class="photo-thumbnail" href="images/action.JPG" data-lightbox="gallery"><img src="images/action.JPG"></a>
+            <a class="photo-thumbnail" href="images/action2.JPG" data-lightbox="gallery"><img src="images/action2.JPG"></a>
+            <a class="photo-thumbnail" href="images/action3.JPG" data-lightbox="gallery"><img src="images/action3.JPG"></a>
+            <a class="photo-thumbnail" href="images/action4.JPG" data-lightbox="gallery"><img src="images/action4.JPG"></a>
+            <a class="photo-thumbnail" href="images/action5.JPG" data-lightbox="gallery"><img src="images/action5.JPG"></a>
+            <a class="photo-thumbnail" href="images/action6.JPG" data-lightbox="gallery"><img src="images/action6.JPG"></a>
+            <a class="photo-thumbnail" href="images/action7.JPG" data-lightbox="gallery"><img src="images/action7.JPG"></a>
+            <a class="photo-thumbnail" href="images/action8.JPG" data-lightbox="gallery"><img src="images/action8.JPG"></a>
+        </div>
+    </div>
+    <div class="section page-count-section">
+        <span id="page-count-label"></span>
+        <div class="buttons">
+            <button class="prev secondary-button" role="button">Prev</button>
+            <button class="next secondary-button" role="button">Next</button>
         </div>
     </div>
     <!--Page-->
@@ -73,6 +78,7 @@
 </body>
 <!--Footer-->
 <footer>
+    <script src="scripts/photos.js"></script>
     <div id="footer-placeholder"></div>
     <script>
         $(function(){

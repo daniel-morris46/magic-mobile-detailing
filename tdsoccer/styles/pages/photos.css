@@ -22,3 +22,16 @@
     height: 180px;
     object-fit: cover;
 }
+
+.page-count-section {    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}

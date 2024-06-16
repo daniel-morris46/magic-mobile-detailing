@@ -44,23 +44,19 @@
     </div>
     <h3 class="section-heading">Let us know how we can help</h3>
     <div class="section">
-        <form class="contact-us-form" action="https://getform.io/f/09c5945d-494e-4e21-9cf4-83554709e34a" method="POST">
-            <div>
-                <span class="form-label">Name: <i class="required-icon">*</i></span>
-                <input class="form-name-input" type="text" name="name" required>    
-            </div>
-            <div>
-                <span class="form-label">Email: <i class="required-icon">*</i></span>
-                <input class="form-email-input" type="email" name="email" required>
-            </div>
-            <div>
-                <span class="form-label">How can we help? <i class="required-icon">*</i></span>
-                <textarea class="form-message-input" type="text" name="message" required></textarea>
-            </div>
-            <!-- add hidden Honeypot input to prevent spams -->
-            <input type="hidden" name="_gotcha" style="display:none !important">
-            <input type="file" name="file">
-            <button class="primary-button" type="submit">Send</button>
+
+        <form class="contact-us-form" action="https://api.staticforms.xyz/submit" method="post">
+            <!-- Replace with accesKey sent to your email -->
+            <input type="hidden" name="accessKey" value="a9504588-3b96-466c-84f3-a07526e3373e"> <!-- Required -->
+            <span class="form-label">Name: <i class="required-icon">*</i></span>
+            <input type="text" name="name"> <!-- Optional -->
+            <span class="form-label">Email: <i class="required-icon">*</i></span>
+            <input type="text" name="email"> <!-- Optional -->
+            <span class="form-label">How can we help? <i class="required-icon">*</i></span>
+            <textarea name="message"></textarea> <!-- Optional -->
+            <!-- If you want form to redirect to a specific url after submission -->
+            <input type="hidden" name="redirectTo" value="https://magicdetailing.ca"> <!-- Optional -->
+            <input class="primary-button" type="submit" value="Submit" />
         </form>
     </div>
     <!--Page-->
