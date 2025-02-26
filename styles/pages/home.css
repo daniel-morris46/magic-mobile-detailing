@@ -71,6 +71,16 @@
     box-shadow: 0 0 0 8px #6e9fe936;
 }
 
+@media screen and (max-width: 768px) {
+    .contact-container {
+        display: flex;
+        position: absolute;
+        top: 380px;
+        width: 150%;
+        transform: scale(0.65);
+    }
+}
+
 .phone-container {
     height: 100px;
     display: flex;
@@ -166,7 +176,7 @@
     background-size: 104%;
     background-position-y: 32%;
     width: 100%;
-    justify-content: start;
+    justify-content: space-between;
 }
 
 .full-interior-detail-image {
@@ -176,6 +186,24 @@
 }
 
 .full-interior-text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 50%;
+    background-color: rgb(255, 255, 255, 0.7);
+    opacity: 100%;
+    position: relative;
+    top: 100px;
+    min-width: min(340px, 80%);
+    border-radius: 35px;
+    box-shadow: 0 0 0 8px #6e9fe936;
+    margin-right: min(10%, 200px);
+    padding: 15px;
+    min-height: 425px;
+}
+
+.full-detail-text-container {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -205,14 +233,80 @@
     font-size: 1.1em;
 }
 
+.full-detail-heading {
+    display: flex;   
+    align-items: center;
+    color: rgb(255, 255, 255);
+    font-size: 3.1em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    max-width: 30%;
+}
+
 .full-interior-detail-section {
     min-height: 600px;
     background-image: url('../../images/leather-scrubbing.jpg');
     background-size: 104%;
     background-position-y: 32%;
     width: 100%;
-    justify-content: end;
+    justify-content: space-between;
     margin-top: 40px;
+}
+
+.full-interior-detail-heading {
+    display: flex;   
+    align-items: center;
+    padding-left: 100px;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-size: 3.1em;
+    max-width: 40%;
+}
+
+@media screen and (max-width: 768px) {
+    .full-detail-section {
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+        justify-content: flex-start;
+        gap: 20px;
+    }
+
+    .full-detail-heading {
+        order: -1; 
+        padding-top: 70px;
+        text-align: center;
+    }
+
+    .full-interior-detail-section {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+    }
+
+    .full-interior-text-container,
+    .full-detail-text-container {
+        margin: 0 20px; 
+        top: 50px;
+        min-height: 350px;
+        text-align: center;
+    }
+
+    .full-detail-heading,
+    .full-interior-detail-heading {
+        font-size: 2em;
+        max-width: 90%;
+        padding-left: 20px;
+    }
+
+    .full-detail-text {
+        font-size: 1em;
+    }
+
+    .full-detail-buttons {
+        gap: 10px;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 .wash-and-wax-section {
