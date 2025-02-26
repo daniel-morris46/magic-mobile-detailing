@@ -1,6 +1,6 @@
 .page-header {
-    background-image: url('/images/home-header-small.webp');
-    background-position-y: 80%;
+    background-image: url('/images/cover-2.jpg');
+    background-position-y: 70%;
 }
 
 #secondary-header-title {
@@ -49,17 +49,26 @@
   box-shadow: rgba(114, 164, 240, 0.5) 0 1px 30px;
 }
 
+.contact-wrapper {
+    display: flex;
+    justify-content: center; /* Centers contact-container horizontally */
+    width: 100%;
+}
+
 .contact-container {
     width: min(80%, 800px);
-    margin: -30px auto 30px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-around;
     align-items: center;
     background-color: rgb(214, 214, 214);
     border-radius: 10px;
-    min-height: 153px;
+    /* min-height: 153px; */
     flex-wrap: wrap;
     padding: 10px 30px;
+    position: absolute;
+    top: 490px;
+    box-shadow: 0 0 0 8px #6e9fe936;
 }
 
 .phone-container {
@@ -145,8 +154,19 @@
     font-size: 1em;
 }
 
-.full-interior-detail-section {
-    min-height: 400px;
+.full-detail-title {
+    font-size: 2.3em;
+    padding-top: 15px;
+    padding-left: 10px;
+}
+
+.full-detail-section {
+    min-height: 600px;
+    background-image: url('../../images/cover-1.jpg');
+    background-size: 104%;
+    background-position-y: 32%;
+    width: 100%;
+    justify-content: start;
 }
 
 .full-interior-detail-image {
@@ -160,6 +180,39 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
+    height: 50%;
+    background-color: rgb(255, 255, 255, 0.7);
+    opacity: 100%;
+    position: relative;
+    top: 100px;
+    min-width: min(340px, 80%);
+    border-radius: 35px;
+    box-shadow: 0 0 0 8px #6e9fe936;
+    margin-left: min(10%, 200px);
+    padding: 15px;
+    min-height: 425px;
+}
+
+.full-detail-text {
+    font-size: 1.1em;
+}
+
+.full-detail-buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0px 5px;
+    font-size: 1.1em;
+}
+
+.full-interior-detail-section {
+    min-height: 600px;
+    background-image: url('../../images/leather-scrubbing.jpg');
+    background-size: 104%;
+    background-position-y: 32%;
+    width: 100%;
+    justify-content: end;
+    margin-top: 40px;
 }
 
 .wash-and-wax-section {
@@ -199,7 +252,7 @@
 }
 
 .home-middle-section {
-    background-image: url('../../images/porsche.PNG');
+    background-color: blue;
     background-position: center;
     background-position-y: 50%;
     background-size: cover;

@@ -74,6 +74,12 @@ function screenChange () {
     let isRounded = !pageHasScrolledDown15;
     let isRectangle = onHomePage && pageHasScrolledDown100 || !onHomePage && pageHasScrolledDown15;
     let isCircle = isMobileView && onHomePage && !pageHasScrolledDown100;
+    
+    // Added 02/17/2025 conditional could be reworked
+    isCircle = false;
+    isRounded = false;
+    isRectangle = true;
+
 
     if (isRounded) {
         navbar.classList.add("rounded");

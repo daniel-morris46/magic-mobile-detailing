@@ -28,6 +28,7 @@
 
 .book-now-button {
     background-color: rgb(44, 85, 239);
+    display: n;
 }
 
 .book-now-button:hover {
