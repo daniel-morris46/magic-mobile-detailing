@@ -44,21 +44,16 @@
     </div>
     <h3 class="section-heading">Let us know how we can help</h3>
     <div class="section">
-    
-        <form class="contact-us-form" action="https://formsubmit.co/072486d9539c177154c69cf61b59335d" method="post">
-            <!-- Replace with accesKey sent to your email -->
-            <!-- <input type="hidden" name="accessKey" value="a9504588-3b96-466c-84f3-a07526e3373e"> -->
-
-            <span class="form-label">Name: <i class="required-icon">*</i></span>        <!-- Required -->
-            <input type="text" name="name">                                             <!-- Optional -->
-            <span class="form-label">Email: <i class="required-icon">*</i></span>       <!-- Required -->
-            <input type="text" name="email">                                            <!-- Optional -->
-            <span class="form-label">Share photo(s):                                    <!-- Optional -->
-            <input type="file" multiple="multiple" name="attachment" accept="image/png, image/jpeg"> <!-- Optional -->
+        <form class="contact-us-form" action="https://formsubmit.co/072486d9539c177154c69cf61b59335d" method="post" enctype="multipart/form-data">
+            <span class="form-label">Name: <i class="required-icon">*</i></span>        
+            <input type="text" name="name">                                            
+            <span class="form-label">Email: <i class="required-icon">*</i></span>     
+            <input type="text" name="email">                                          
+            <span class="form-label">Share photo(s):</span>                                   
+            <input type="file" multiple="multiple" name="attachment" accept="image/png, image/jpeg"/>
             <span class="form-label">How can we help? <i class="required-icon">*</i></span>
-            <textarea name="message"></textarea>                                         <!-- Optional -->
-            <!-- If you want form to redirect to a specific url after submission -->
-            <input type="hidden" name="redirectTo" value="https://magicdetailing.ca">    <!-- Optional -->
+            <textarea name="message"></textarea>                                        
+            <input type="hidden" name="redirectTo" value="https://magicdetailing.ca"/>   
             <input class="primary-button" type="submit" value="Submit" />
         </form>
     </div>
