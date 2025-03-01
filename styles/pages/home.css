@@ -1,5 +1,5 @@
 .page-header {
-    background-image: url('/images/cover-2.jpg');
+    background-image: url('/images/cover-2-small.jpg');
     background-position-y: 64%;
     min-height: 650px;
 }
@@ -175,7 +175,7 @@
 
 .full-detail-section {
     min-height: 600px;
-    background-image: url('../../images/cover-1.jpg');
+    background-image: url('../../images/cover-1-small.jpg');
     background-size: 104%;
     background-position-y: 50%;
     width: 100%;
@@ -247,7 +247,7 @@
 
 .full-interior-detail-section {
     min-height: 600px;
-    background-image: url('../../images/leather-scrubbing.jpg');
+    background-image: url('../../images/leather-scrubbing-small.jpg');
     background-size: 104%;
     background-position-y: 32%;
     width: 100%;
