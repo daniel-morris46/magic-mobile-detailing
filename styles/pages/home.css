@@ -265,6 +265,8 @@
     max-width: 40%;
 }
 
+
+
 @media only screen and (max-width: 1020px) {
     .full-detail-section {
         display: flex;
@@ -331,6 +333,14 @@
         gap: 10px;
         align-items: center;
         justify-content: center;
+    }
+}
+
+/* When contact-us container wraps */
+@media only screen and (max-width: 671px) {
+    .full-detail-section {
+        padding-top: 200px;
+        padding-bottom: 70px;
     }
 }
 
