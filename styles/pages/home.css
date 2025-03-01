@@ -414,3 +414,9 @@
 .top-text-heading {
     font-size: 2.5em;
 }
+
+.embedsocial-widget {
+    max-width: 1200px;
+    margin: auto;
+    padding-top: 20px;
+}
