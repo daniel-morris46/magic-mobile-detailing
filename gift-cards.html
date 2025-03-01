@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles/global.css?rnd=@Function.SessionID~">
+    <link rel="stylesheet" href="styles/header.css?rnd=@Function.SessionID~">
+    <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gift Cards | Magic Mobile Detailing</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        h1 {
+            margin-top: 20px;
+        }
+        .iframe-container {
+            padding-top: 90px;
+            width: 100%;
+            max-width: 900px;
+            height: 800px;
+            margin: 20px auto;
+        }
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        .external-link {
+            padding-top: 20px;
+            padding-bottom: 20px;
+            display: none;
+            margin-top: 20px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <!--Navigation bar-->
+    <div id="nav-placeholder"></div>
+    <script>
+        $(function(){
+            $("#nav-placeholder").load("nav.html");
+        });
+    </script>
+    <!--Navigation bar-->
+    <!-- <h1>Purchase a Gift Card</h1>
+    <p>Get a Magic Mobile Detailing gift card for your friends and family!</p> -->
+    
+    <div class="iframe-container">
+        <iframe id="giftCardFrame" src="https://app.squareup.com/gift/ML6FMQNDW7PVV/order" loading="lazy"></iframe>
+    </div>
+
+    <p class="external-link">
+        If the gift card page doesn't load, click <a href="https://app.squareup.com/gift/ML6FMQNDW7PVV/order" target="_blank">here</a>.
+    </p>
+
+    <script>
+        // Detect if iframe is blocked
+        document.getElementById("giftCardFrame").onload = function() {
+            const iframe = document.getElementById("giftCardFrame");
+            if (!iframe.contentDocument || iframe.contentDocument.body.childElementCount === 0) {
+                document.querySelector(".external-link").style.display = "block";
+            }
+        };
+    </script>
+    <!--Footer-->
+    <footer>
+        <div id="footer-placeholder"></div>
+        <script>
+            $(function(){
+                $("#footer-placeholder").load("footer.html");
+            });
+        </script>
+    </footer>
+    <!--Footer-->
+</body>
+</html>

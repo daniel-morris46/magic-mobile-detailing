@@ -1,0 +1,23 @@
+.section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.error-message{
+    padding-bottom: 40px;
+}
+.home-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    color: white;
+    background-color: #4fa8e8;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.home-button:hover { 
+    background-color:  #4fa8e8;
+}

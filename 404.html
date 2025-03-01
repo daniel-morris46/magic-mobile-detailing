@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>404 Not Found</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/global.css?rnd=@Function.SessionID~">
+    <link rel="stylesheet" href="styles/header.css?rnd=@Function.SessionID~">
+    <link rel="stylesheet" href="styles/pages/404.css?rnd=@Function.SessionID~">
+    <link rel="stylesheet" href="styles/pages/contact-us.css?rnd=@Function.SessionID~">
+    <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <!--Navigation bar-->
+    <div id="nav-placeholder"></div>
+    <script>
+        $(function(){
+            $("#nav-placeholder").load("nav.html");
+        });
+    </script>
+    <!--Navigation bar-->
+
+    <!--Page-->
+    <div class="page-header">
+        <h1 id="primary-header-title">404 - Page Not Found</h1>
+        <h2 id="secondary-header-title">Oops! The page you are looking for doesn't exist.</h2> 
+    </div>
+    <h3 class="section-heading">Let's get you back on track</h3>
+    <div class="section">
+        <p class="error-message">The page you requested could not be found. It may have been moved or deleted.</p>
+        <a href="index.html" class="home-button">Return to Home</a>
+    </div>
+    <!--Page-->
+    
+</body>
+<!--Footer-->
+<footer>
+    <div id="footer-placeholder"></div>
+    <script>
+        $(function(){
+            $("#footer-placeholder").load("footer.html");
+        });
+    </script>
+</footer>
+<!--Footer-->
+</html>
