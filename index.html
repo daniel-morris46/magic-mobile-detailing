@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="preload" href="https://fonts.gstatic.com/s/roboto/v27/KFOmCnqEu92Fr1Mu4mxK4g.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com/s/roboto/v27/KFOmCnqEu92Fr1Mu4mxK4g.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="preload" href="/images/cover-2-small.webp" as="image">
     <title>Mobile Detailing & Car Wash Saskatoon | Magic Mobile Detailing</title>
     <meta name="description" content="Looking to have your vehicle detailed in Saskatoon? We come to you and offer professional auto detailing services at your home or business. Book Online Now!">
@@ -16,7 +16,6 @@
     <link rel="stylesheet" href="styles/icon-list.css?rnd=@Function.SessionID~">
     <link rel="stylesheet" href="styles/buttons.css?rnd=@Function.SessionID~">
 
-    <link rel="stylesheet" href="styles/pages/home.css?rnd=@Function.SessionID~">
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-RXR340DBY4"></script>
     <script>
@@ -26,20 +25,371 @@
 
     gtag('config', 'G-RXR340DBY4');
     </script>
-
     <script src="scripts/home.js?rnd=@Function.SessionID~"></script>
-
     <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
     <script src="https://kit.fontawesome.com/ce33f5b44a.js" crossorigin="anonymous"></script>
-
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
+        /* home.css */
         .full-interior-detail-image,
         .van-image,
         .wash-and-wax-image {
             width: 300px;
             height: 400px;
             object-fit: cover;
+        }
+        .page-header {
+            background-image: url('/images/cover-2-small.webp');
+            background-position-y: 64%;
+            min-height: 650px;
+        }
+
+        #secondary-header-title {
+            text-shadow: #000 2px 0 10px;
+        }
+
+        .header-buttons {
+            width: 100%;
+            margin-top: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            column-gap: 40px;
+        }
+
+        .header-button {
+            border-radius: 8px;
+            border-style: none;
+            box-sizing: border-box;
+            color: #fff;
+            cursor: pointer;
+            flex-shrink: 0;
+            font-size: 16px;
+            font-weight: 500;
+            height: 4rem;
+            padding: 0 1.6rem;
+            text-align: center;
+            text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+            transition: 0.5s;
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+        }
+
+        .header-button:hover {
+            transition-duration: 0.1s;
+        }
+
+        .header-button-1 {
+            background-color: #72a4f0;
+        }
+
+        .header-button-1:hover {
+            box-shadow: rgba(114, 164, 240, 0.5) 0 1px 30px;
+        }
+
+        .contact-wrapper {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+
+        .contact-container {
+            width: min(80%, 800px);
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: #d6d6d6;
+            border-radius: 10px;
+            flex-wrap: wrap;
+            padding: 10px 30px;
+            position: absolute;
+            top: 600px;
+            box-shadow: 5px 5px 10px #000;
+        }
+
+        .phone-container,
+        .working-hours-container {
+            height: 100px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            width: 225px;
+        }
+
+        .phone-icon {
+            font-size: 2.5em;
+            color: #2c55ef;
+        }
+
+        .location-text-container,
+        .phone-text-container,
+        .working-hours-text-container {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        .phone-title,
+        .working-hours-title {
+            font-size: 1.4em;
+            display: block;
+        }
+
+        .phone-text,
+        .working-hours-text {
+            display: block;
+        }
+
+        .location-icon,
+        .top-text-heading,
+        .working-hours-icon {
+            font-size: 2.5em;
+        }
+
+        .location-container {
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .location-title {
+            display: block;
+            font-size: 1.4em;
+        }
+
+        .location-text {
+            display: block;
+            font-size: 1em;
+        }
+
+        .full-detail-title {
+            font-size: 2.3em;
+            padding-top: 15px;
+            padding-left: 10px;
+        }
+
+        .full-detail-section {
+            min-height: 600px;
+            background-image: url('../../images/cover-1-small.webp');
+            background-size: 104%;
+            background-position-y: 50%;
+            width: 100%;
+            justify-content: space-between;
+        }
+
+        .full-detail-text-container,
+        .full-interior-text-container {
+            height: 50%;
+            background-color: rgba(255, 255, 255, 0.7);
+            opacity: 100%;
+            position: relative;
+            top: 100px;
+            min-width: min(340px, 80%);
+            border-radius: 35px;
+            box-shadow: 5px 5px 10px #000;
+            padding: 15px;
+            min-height: 425px;
+            display: flex;
+        }
+
+        .full-interior-text-container {
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-right: min(10%, 200px);
+        }
+
+        .full-detail-text-container {
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-left: min(10%, 200px);
+        }
+
+        .full-detail-text {
+            font-size: 1.1em;
+        }
+
+        .full-detail-buttons {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            padding: 0 5px;
+            font-size: 1.1em;
+        }
+
+        .full-detail-heading,
+        .full-interior-detail-heading {
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            font-size: 3.1em;
+            display: flex;
+            color: #fff;
+        }
+
+        .full-detail-heading {
+            align-items: center;
+            max-width: 30%;
+        }
+
+        .full-interior-detail-section {
+            min-height: 600px;
+            background-image: url('../../images/leather-scrubbing-small.webp');
+            background-size: 104%;
+            background-position-y: 32%;
+            width: 100%;
+            justify-content: space-between;
+            margin-top: 40px;
+        }
+
+        .full-interior-detail-heading {
+            align-items: center;
+            padding-left: 100px;
+            max-width: 40%;
+        }
+
+        @media only screen and (max-width: 1020px) {
+            .contact-container {
+                display: flex;
+                position: absolute;
+                top: 265px;
+                width: 70%;
+                padding: 4px;
+                box-shadow: 5px 5px 10px #000;
+                font-size: 0.8em;
+            }
+
+            .full-detail-heading,
+            .full-interior-detail-heading {
+                font-size: 2em;
+                max-width: 90%;
+                padding-left: 20px;
+                text-align: center;
+                text-shadow: 
+                    1px 1px 0 #414040, 
+                    -1px 1px 0 #414040, 
+                    -1px -1px 0 #414040, 
+                    1px -1px 0 #414040;
+            }
+
+            .full-detail-section {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: flex-start;
+                gap: 20px;
+                padding-top: 100px;
+            }
+
+            .full-detail-heading {
+                order: -1;
+                padding-top: 15px;
+                color: #fff;
+            }
+
+            .full-interior-detail-section {
+                display: flex;
+                flex-direction: row-reverse;
+                justify-content: center;
+                background-size: cover;
+            }
+
+            .full-interior-text-container {
+                margin: 0 20px;
+                top: 15px;
+                min-height: 350px;
+            }
+
+            .full-detail-text-container {
+                margin: 0 20px;
+                top: 20px;
+                min-height: 350px;
+            }
+
+            .full-interior-detail-heading {
+                padding-top: 30px;
+            }
+
+            .full-detail-text {
+                font-size: 1em;
+            }
+
+            .full-detail-buttons {
+                gap: 10px;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+
+        @media only screen and (max-width: 671px) {
+            .full-detail-section {
+                padding-top: 200px;
+                padding-bottom: 70px;
+            }
+        }
+
+        .wash-and-wax-section {
+            min-height: 400px;
+        }
+
+        .paint-correction-text-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        .van-text-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .service-locations-list {
+            margin-top: 30px;
+        }
+
+        .home-middle-section {
+            background-color: #00f;
+            background-position: center;
+            background-position-y: 50%;
+            background-size: cover;
+            color: #fff;
+            max-width: 1100px;
+            margin: auto;
+            text-shadow: 2px 2px 2px #000;
+        }
+
+        .home-middle-section .section {
+            min-height: 500px;
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            justify-content: center;
+        }
+
+        .home-middle-section .section-heading {
+            color: #fff;
+            font-size: 50px;
+            line-height: 60px;
+            margin: 0;
+        }
+
+        .home-middle-section p {
+            text-align: center;
+            font-size: 1.5em;
+        }
+
+        .embedsocial-widget {
+            max-width: 1200px;
+            margin: auto;
+            padding-top: 20px;
         }
     </style>
 </head>
