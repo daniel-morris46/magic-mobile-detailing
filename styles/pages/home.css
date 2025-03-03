@@ -2,6 +2,7 @@
     background-image: url('/images/cover-2-small.webp');
     background-position-y: 64%;
     min-height: 650px;
+    background-size: contain; 
 }
 
 #secondary-header-title {
@@ -283,6 +284,9 @@
         gap: 10px;
         align-items: center;
         justify-content: center;
+    }
+    .page-header {
+        max-height: 300px;
     }
 }
 

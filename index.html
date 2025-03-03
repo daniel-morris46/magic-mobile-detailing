@@ -324,6 +324,9 @@
                 align-items: center;
                 justify-content: center;
             }
+            .page-header {
+            min-height: 300px;
+            }
         }
 
         @media only screen and (max-width: 671px) {
@@ -415,7 +418,7 @@
     <div class="contact-wrapper">
         <div class="contact-container">
             <div class="phone-container">
-                <a href="tel:3062028177"><i class="phone-icon fa-solid fa-phone"></i></a>
+                <a href="tel:3062028177" aria-label="Call Magic Mobile Detailing"><i class="phone-icon fa-solid fa-phone"></i></a>
                 <div class="phone-text-container">
                     <span class="phone-title">Contact Us</span>
                     <span class="phone-text">306-202-8177</span>
@@ -487,7 +490,7 @@
                 <p>- Interior Window Cleaning</p>
             </div>
             <div class="full-detail-buttons left-image-section-button">
-                <button class="primary-button" role="button" onclick="location.href='/interior-detail-saskatoon.html'">Read More</button>
+                <button class="primary-button" role="button" onclick="location.href='/full-interior-detail-saskatoon.html'">Read More</button>
                 <button class="book-now-button" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/magicdetailing/minivan-interior-detail?hide_gdpr_banner=1'});return false;">Book Now</button>
             </div>
         </div>
@@ -514,7 +517,7 @@
     <h3 class="section-heading">We Come to You</h3>
     <div class="section left-image-section">
         <div class="left-image-section-image-container">
-            <img class="van-image"  loading="lazy" src="images/floor-mat-wash-small.webp">
+            <img class="van-image" loading="lazy" alt="washing floor mat" src="images/floor-mat-wash-small.webp">
         </div>
         <div class="van-text-container left-image-section-text-container">
             <div class="left-image-section-text">
@@ -578,10 +581,18 @@
 <footer>
     <div id="footer-placeholder"></div>
     <script>
-        $(function(){
-            $("#footer-placeholder").load("footer.html");
+        document.addEventListener("DOMContentLoaded", async () => {
+          try {
+            const response = await fetch("footer.html");
+            if (!response.ok) throw new Error("Failed to load footer");
+            const navHtml = await response.text();
+            document.getElementById("footer-placeholder").outerHTML = navHtml;
+
+          } catch (error) {
+            console.error("Error loading footer:", error);
+          }
         });
-    </script>
+      </script>
 </footer>
 <!--Footer-->
 </html>
