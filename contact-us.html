@@ -1,36 +1,47 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Contact Us</title>
-<link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <title>Contact Us</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
 
-<link rel="stylesheet" href="styles/global.css?rnd=@Function.SessionID~">
-<link rel="stylesheet" href="styles/header.css?rnd=@Function.SessionID~">
-<link rel="stylesheet" href="styles/pages/contact-us.css?rnd=@Function.SessionID~">
-<link rel="stylesheet" href="styles/libraries/lightbox.min.css">
+    <link rel="stylesheet" href="styles/global.css?rnd=@Function.SessionID~">
+    <link rel="stylesheet" href="styles/header.css?rnd=@Function.SessionID~">
+    <link rel="stylesheet" href="styles/pages/contact-us.css?rnd=@Function.SessionID~">
+    <link rel="stylesheet" href="styles/libraries/lightbox.min.css">
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RXR340DBY4"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RXR340DBY4"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-  gtag('config', 'G-RXR340DBY4');
-</script>
-<script src="scripts/libraries/lightbox-plus-jquery.min.js"></script>
-<script src="scripts/price-section.js"></script>
+    gtag('config', 'G-RXR340DBY4');
+    </script>
+    <script src="scripts/libraries/lightbox-plus-jquery.min.js"></script>
+    <script src="scripts/price-section.js"></script>
 
-<script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
-<script src="https://kit.fontawesome.com/ce33f5b44a.js" crossorigin="anonymous"></script>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="https://kit.fontawesome.com/ce33f5b44a.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Contact Magic Detailing for all your car detailing needs. We offer a variety of services to keep your car looking its best.">
 </head>
 <body>
     <!--Navigation bar-->
     <div id="nav-placeholder"></div>
     <script>
-        $(function(){
-            $("#nav-placeholder").load("nav.html");
+        document.addEventListener("DOMContentLoaded", function() {
+            fetch("nav.html")
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById("nav-placeholder").innerHTML = data;
+                                    
+                    // Manually load the nav.js script
+                    const script = document.createElement("script");
+                    script.src = "../scripts/nav.js";
+                    document.body.appendChild(script);
+                })
+                .catch(error => console.error("Error loading navbar:", error));
         });
     </script>
     <!--Navigation bar-->
