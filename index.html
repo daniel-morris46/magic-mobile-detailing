@@ -400,18 +400,18 @@
     <!--Navigation bar-->
     <div id="nav-placeholder"></div>
     <script>
-        $(function() {
-            $.ajax({
-                url: "nav.html",
-                type: "GET",        
-                async: true,       
-                success: function(data) {
-                    $("#nav-placeholder").html(data);
-                },
-                error: function() {
-                    console.error("Error loading nav.html");
-                }
-            });
+        document.addEventListener("DOMContentLoaded", function() {
+            fetch("nav.html")
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById("nav-placeholder").innerHTML = data;
+                                    
+                    // Manually load the nav.js script
+                    const script = document.createElement("script");
+                    script.src = "../scripts/nav.js";
+                    document.body.appendChild(script);
+                })
+                .catch(error => console.error("Error loading navbar:", error));
         });
     </script>
     <!--Navigation bar-->
