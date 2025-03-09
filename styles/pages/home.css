@@ -1,8 +1,7 @@
 .page-header {
-    background-image: url('/images/cover-2-small.webp');
+    height: 300px;
     background-position-y: 64%;
-    min-height: 650px;
-    background-size: contain; 
+    background-image: url('/images/cover-2-small.webp');
 }
 
 #secondary-header-title {
@@ -136,11 +135,11 @@
 }
 
 .full-detail-section {
+    width: 100%;
     min-height: 600px;
     background-image: url('../../images/cover-1-small.webp');
     background-size: 104%;
     background-position-y: 50%;
-    width: 100%;
     justify-content: space-between;
 }
 
@@ -200,10 +199,10 @@
 
 .full-interior-detail-section {
     min-height: 600px;
+    width: 100%;
     background-image: url('../../images/leather-scrubbing-small.webp');
     background-size: 104%;
     background-position-y: 32%;
-    width: 100%;
     justify-content: space-between;
     margin-top: 40px;
 }

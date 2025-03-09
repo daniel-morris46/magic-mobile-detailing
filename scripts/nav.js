@@ -20,6 +20,7 @@ function closeMenu() {
 }
 
 function showDropdown(dropdown) {
+    event.preventDefault();
     hideDropdowns();
     if (window.innerWidth > hamburgerScreenWidth) {
         $('#' + dropdown).toggle();

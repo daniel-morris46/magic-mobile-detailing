@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Contact Us</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+
+    <link rel="stylesheet" href="styles/global.css?rnd=@Function.SessionID~">
+    <link rel="stylesheet" href="styles/header.css?rnd=@Function.SessionID~">
+    <link rel="stylesheet" href="styles/pages/contact-us.css?rnd=@Function.SessionID~">
+    <link rel="stylesheet" href="styles/libraries/lightbox.min.css">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RXR340DBY4"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-RXR340DBY4');
+    </script>
+    <script src="scripts/libraries/lightbox-plus-jquery.min.js"></script>
+    <script src="scripts/price-section.js"></script>
+
+    <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="https://kit.fontawesome.com/ce33f5b44a.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Contact Magic Detailing for all your car detailing needs. We offer a variety of services to keep your car looking its best.">
+</head>
+<body>
+    <!--Navigation bar-->
+    <div id="nav-placeholder"></div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            fetch("nav.html")
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById("nav-placeholder").innerHTML = data;
+                                    
+                    // Manually load the nav.js script
+                    const script = document.createElement("script");
+                    script.src = "../scripts/nav.js";
+                    document.body.appendChild(script);
+                })
+                .catch(error => console.error("Error loading navbar:", error));
+        });
+    </script>
+    <!--Navigation bar-->
+
+    <!--Page-->
+    <div class="page-header">
+        <h1 id="primary-header-title">Get In Touch</h1>
+        <h2 id="secondary-header-title">We'd love to hear from you</h2> 
+    </div>
+    <h3 class="section-heading">Let us know how we can help</h3>
+    <div class="section">
+
+        <form class="contact-us-form" action="https://api.staticforms.xyz/submit" method="post">
+            <!-- Replace with accesKey sent to your email -->
+            <input type="hidden" name="accessKey" value="a9504588-3b96-466c-84f3-a07526e3373e"> <!-- Required -->
+            <span class="form-label">Name: <i class="required-icon">*</i></span>
+            <input type="text" name="name"> <!-- Optional -->
+            <span class="form-label">Email: <i class="required-icon">*</i></span>
+            <input type="text" name="email"> <!-- Optional -->
+            <span class="form-label">How can we help? <i class="required-icon">*</i></span>
+            <textarea name="message"></textarea> <!-- Optional -->
+            <!-- If you want form to redirect to a specific url after submission -->
+            <input type="hidden" name="redirectTo" value="https://magicdetailing.ca"> <!-- Optional -->
+            <input class="primary-button" type="submit" value="Submit" />
+        </form>
+    </div>
+    <!--Page-->
+    
+</body>
+<!--Footer-->
+<footer>
+    <div id="footer-placeholder"></div>
+    <script>
+        $(function(){
+            $("#footer-placeholder").load("footer.html");
+        });
+    </script>
+</footer>
+<!--Footer-->
+</html>

@@ -1,56 +1,90 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Paint Correction Saskatoon | Magic Mobile Detailing</title>
-<meta name="description" content="Looking for paint correction services in Saskatoon? We come to you and offer professional auto detailing services at your home or business.">
-<link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="preload" href="nav.html" as="fetch" crossorigin="anonymous">
+    <link rel="preload" href="/images/polish.webp" as="image">
+    
+    <title>Paint Correction Saskatoon | Magic Mobile Detailing</title>
+    <meta name="description" content="Looking for paint correction services in Saskatoon? We come to you and offer professional auto detailing services at your home or business.">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
 
-<link rel="stylesheet" href="styles/global.css?rnd=@Function.SessionID~">
-<link rel="stylesheet" href="styles/header.css?rnd=@Function.SessionID~">
-<link rel="stylesheet" href="styles/text-section.css?rnd=@Function.SessionID~">
-<link rel="stylesheet" href="styles/numbered-list.css?rnd=@Function.SessionID~">
-<link rel="stylesheet" href="styles/pricing-section.css?rnd=@Function.SessionID~">
-<link rel="stylesheet" href="styles/faq-section.css?rnd=@Function.SessionID~">
+    <link rel="stylesheet" href="styles/global.css?rnd=@Function.SessionID~">
+    <link rel="stylesheet" href="styles/header.css?rnd=@Function.SessionID~">
+    <link rel="stylesheet" href="styles/text-section.css?rnd=@Function.SessionID~">
+    <link rel="stylesheet" href="styles/numbered-list.css?rnd=@Function.SessionID~">
+    <link rel="stylesheet" href="styles/pricing-section.css?rnd=@Function.SessionID~">
+    <link rel="stylesheet" href="styles/faq-section.css?rnd=@Function.SessionID~">
 
-<link rel="stylesheet" href="styles/pages/wash-and-polish-saskatoon.css?rnd=@Function.SessionID~">
+    <link rel="stylesheet" href="styles/pages/wash-and-polish-saskatoon.css?rnd=@Function.SessionID~">
 
-<link rel="stylesheet" href="styles/libraries/lightbox.min.css">
+    <link rel="stylesheet" href="styles/libraries/lightbox.min.css">
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RXR340DBY4"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RXR340DBY4"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-  gtag('config', 'G-RXR340DBY4');
-</script>
-<script src="scripts/libraries/lightbox-plus-jquery.min.js"></script>
-<script src="scripts/price-section.js?rnd=@Function.SessionID~"></script>
+    gtag('config', 'G-RXR340DBY4');
+    </script>
+    <script defer src="scripts/libraries/lightbox-plus-jquery.min.js"></script>
+    <script defer src="scripts/price-section.js?rnd=@Function.SessionID~"></script>
 
-<script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
-<script src="https://kit.fontawesome.com/ce33f5b44a.js" crossorigin="anonymous"></script>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="https://kit.fontawesome.com/ce33f5b44a.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        /* Styling for placeholder to avoid high CLS score, (shifting page header images after nav loads) */
+        #nav-placeholder {
+            height: 1px;
+            display: block;
+        }
+        .page-header {
+            height: 550px;
+            width: 100%;    
+            background-image: url('/images/polish.webp');
+            background-size: cover;
+            background-position-y: 25%;
+        }
+
+        .pricing-contact-us {
+            text-align: center;
+            padding-top: 30px;
+            font-size: 1.4em;
+        }
+        .premium-hand-wash-link {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
     <!--Navigation bar-->
     <div id="nav-placeholder"></div>
     <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            fetch("nav.html")
-                .then(response => response.text())
-                .then(data => {
-                    document.getElementById("nav-placeholder").innerHTML = data;
-                                    
-                    // Manually load the nav.js script
-                    const script = document.createElement("script");
-                    script.src = "../scripts/nav.js";
+        // Using async and fetch to dynamically load nav.html without deprecated XHR
+        async function loadNavbar() {
+            try {
+                const response = await fetch('nav.html');
+                if (response.ok) {
+                    const html = await response.text();
+                    document.getElementById('nav-placeholder').innerHTML = html;
+                    
+                    // Dynamically load the nav.js script
+                    const script = document.createElement('script');
+                    script.src = 'scripts/nav.js'; 
                     document.body.appendChild(script);
-                })
-                .catch(error => console.error("Error loading navbar:", error));
-        });
+                } else {
+                    console.error('Failed to load navbar:', response.status);
+                }
+            } catch (error) {
+                console.error('Error loading navbar:', error);
+            }
+        }
+        loadNavbar(); 
     </script>
     <!--Navigation bar-->
+    
 
     <!--Page-->
     <div class="page-header">
@@ -60,16 +94,16 @@
     <h3 class="section-heading">A detailed process to remove imperfections and enhance colour</h3>
     <div class="section text-section">
         <p>Have you ever noticed swirl marks on your vehicle when it is sitting in the sun?</p>
-        <p>Swirl marks are micro scraches in your vehicle's paint caused by impropper car washing, unprotected paint, and everday use.</p>
+        <p>Swirl marks are micro scratches in your vehicle's paint caused by improper car washing, unprotected paint, and everyday use.</p>
         <p>Polishing your vehicle removes these micro scratches by smoothing your vehicle's clear coat giving it a clear, swirl free appearance.</p>
         <p>We can not guarantee that every last scratch on your vehicle's paint work will be removed as some deeper scratches can not be resolved with polishing.</p>
-        <p>Polishing is a detailed and labour intensive process. If you are looking for a simpler service to enhance gloss and shine on your vehicle check out our <a href="wash-and-wax-saskatoon.html">Wash and Wax</a> service.</p>
+        <p>Polishing is a detailed and labour intensive process. If you are looking for a simpler service to enhance gloss and shine on your vehicle check out our <a class="link" href="wash-and-wax-saskatoon.html">Wash and Wax</a> service.</p>
     </div>
     <h3 class="section-heading">Our Paint Correction Process</h3>
     <div class="section numbered-list">
         <div class="numbered-list-item">
             <span class="numbered-list-number">1</span>
-            <p class="numbered-list-text">Give your vehicle our <a href="hand-car-wash-saskatoon.html">Premium Hand Wash</a>.</p>
+            <p class="numbered-list-text">Give your vehicle our <a class="premium-hand-wash-link" href="hand-car-wash-saskatoon.html">Premium Hand Wash</a>.</p>
         </div>
         <div class="numbered-list-item">
             <span class="numbered-list-number">2</span>
@@ -85,7 +119,7 @@
         </div>
         <div class="numbered-list-item">
             <span class="numbered-list-number">5</span>
-            <p class="numbered-list-text">Inspect your vehicle's paint and perform test spots as neccecary.</p>
+            <p class="numbered-list-text">Inspect your vehicle's paint and perform test spots as necessary.</p>
         </div>
         <div class="numbered-list-item">
             <span class="numbered-list-number">6</span>
