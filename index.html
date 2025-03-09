@@ -8,7 +8,9 @@
     <title>Mobile Detailing & Car Wash Saskatoon | Magic Mobile Detailing</title>
     <meta name="description" content="Looking to have your vehicle detailed in Saskatoon? We come to you and offer professional auto detailing services at your home or business. Book Online Now!">
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
-
+    
+    <script src="https://kit.fontawesome.com/ce33f5b44a.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
     <link rel="stylesheet" href="styles/global.css?rnd=@Function.SessionID~">    
     <link rel="stylesheet" href="styles/header.css?rnd=@Function.SessionID~">
     <link rel="stylesheet" href="styles/left-image-section.css?rnd=@Function.SessionID~">
@@ -27,15 +29,12 @@
 
         gtag('config', 'G-RXR340DBY4');
     </script>
-    <script src="scripts/home.js?rnd=@Function.SessionID~"></script>
-    <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
-    <script src="https://kit.fontawesome.com/ce33f5b44a.js" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
         /* Styling for placeholder to avoid high CLS score, (shifting page header images after nav loads) */
         #nav-placeholder {
-            display: block;
             min-height: 1px; /* Adjust based on navbar height */
+            display: block;
         }
         /* home.css */
         .full-interior-detail-image,
@@ -183,10 +182,10 @@
 
         .full-detail-section {
             min-height: 600px;
+            width: 100%;
             background-image: url('../../images/cover-1-small.webp');
             background-size: 104%;
             background-position-y: 50%;
-            width: 100%;
             justify-content: space-between;
         }
 
@@ -404,18 +403,8 @@
     <!--Navigation bar-->
     <div id="nav-placeholder"></div>
     <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            fetch("nav.html")
-                .then(response => response.text())
-                .then(data => {
-                    document.getElementById("nav-placeholder").innerHTML = data;
-                                    
-                    // Manually load the nav.js script
-                    const script = document.createElement("script");
-                    script.src = "../scripts/nav.js";
-                    document.body.appendChild(script);
-                })
-                .catch(error => console.error("Error loading navbar:", error));
+        $(function(){
+            $("#nav-placeholder").load("nav.html");
         });
     </script>
     <!--Navigation bar-->

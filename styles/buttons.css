@@ -24,11 +24,6 @@
     background-color: rgb(54, 115, 208);
 }
 
-.primary-button-selected {
-  /* background-color: hsl(211, 48%, 82%);  */
-  background-color: hsl(226, 51%, 46%); 
-}
-
 .primary-button:hover {
   transition-duration: .1s;
   box-shadow: rgba(114, 164, 240, 0.5) 0 1px 30px;
