@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Preload critical resources -->
+    <link rel="preload" href="nav.html" as="fetch" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="images/galleries/equipment/1.avif" as="image" type="image/avif" fetchpriority="high">
+    
+    <title>Equipment Cab Cleaning Saskatoon | Magic Mobile Detailing</title>
+    <meta name="description" content="Professional equipment cab cleaning services for construction, agricultural, and industrial machinery. We come to you and offer deep cleaning solutions for all heavy-duty equipment cabs in Saskatoon & Surrounding Areas.">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Critical CSS inline to avoid render blocking -->
+    <style>
+        /* Styling for placeholder to avoid high CLS score (shifting page header images after nav loads) */
+        #nav-placeholder {
+            min-height: 1px; 
+            width: 100%;
+            display: block;
+        }
+        
+        /* Critical layout styles to prevent CLS */
+        body {
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden; /* Prevent horizontal scrolling on mobile */
+        }
+        
+        /* Responsive page header with better spacing for mobile */
+        .page-header {
+            z-index: -1;
+            position: relative;
+            width: 100%;
+            height: auto; /* Remove fixed height for responsiveness */
+            min-height: 250px; /* Minimum height on mobile */
+            padding: 60px 20px; /* Add padding for better spacing */
+            background-color: #333;
+            background-size: cover;
+            background-position: center;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin-bottom: 2em;
+            box-sizing: border-box; /* Ensure padding is included in width/height */
+        }
+        
+        /* Responsive header titles */
+        #primary-header-title {
+            font-size: 2.5rem;
+            margin: 0 0 15px 0;
+            padding: 0;
+            max-width: 100%;
+        }
+        
+        #secondary-header-title {
+            font-size: 1.2rem;
+            margin: 0 0 20px 0;
+            padding: 0;
+            max-width: 100%;
+            font-weight: normal;
+        }
+        
+        .section {
+            margin: 2em auto;
+            padding: 0 0px; 
+        }
+        
+        .section-heading {
+            text-align: center;
+            margin: 2em 0 1em;
+            font-size: 1.8rem; /* Slightly smaller for mobile */
+            padding: 0 0px;
+        }
+        
+        /* Gallery layout to prevent CLS - improved for mobile */
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            width: 100%;
+            max-width: 1330px;
+            margin: auto;
+            padding: 0 10px;
+            box-sizing: border-box;
+            contain: layout style;
+        }
+        
+        .gallery a {
+            position: relative;
+            width: calc(100% - 20px); /* Full width on mobile minus gap */
+            height: 240px; /* Slightly taller for better visibility */
+            display: block;
+            overflow: hidden;
+            margin-bottom: 10px; /* Add bottom margin for spacing on mobile */
+            contain: layout size;
+        }
+        
+        .gallery img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 23%);
+            display: block; /* Prevent whitespace below image */
+            will-change: transform; /* Optimize for animations */
+        }
+        
+        /* Before-After Slider Styles with improved responsiveness */
+        .before-after-container {
+            position: relative;
+            width: 100%;
+            max-width: 800px;
+            margin: 40px auto;
+            overflow: hidden;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 23%);
+            aspect-ratio: 4/3; /* Fixed aspect ratio to prevent layout shift */
+            contain: layout size;
+        }
+        
+        .before-after-container img {
+            width: 100%;
+            height: 100%;
+            display: block;
+            object-fit: cover;
+            contain: paint;
+        }
+        
+        .before-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 50%;
+            height: 100%;
+            overflow: hidden;
+            contain: layout size;
+        }
+        
+        .before-image img {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            object-fit: cover;
+            contain: paint;
+        }
+        
+        .slider {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            width: 4px;
+            background: #fff;
+            cursor: ew-resize;
+            transform: translateX(-50%);
+            z-index: 10;
+        }
+        
+        .slider:before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 30px;
+            height: 30px;
+            background: #fff;
+            border-radius: 50%;
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        }
+        
+        .slider:after {
+            content: 'SLIDE';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 10px;
+            color: #333;
+            font-weight: bold;
+        }
+        
+        .label {
+            position: absolute;
+            bottom: 10px;
+            padding: 5px 10px;
+            background: rgba(0,0,0,0.7);
+            color: white;
+            font-weight: bold;
+            border-radius: 4px;
+            z-index: 5;
+        }
+        
+        .before-label {
+            left: 10px;
+        }
+        
+        .after-label {
+            right: 10px;
+        }
+        
+        /* Numbered list styles with improved responsiveness */
+        .numbered-titled-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: stretch;
+            width: 100%;
+            max-width: 1300px;
+            margin: auto;
+            gap: 20px;
+            padding: 0 10px;
+            box-sizing: border-box;
+        }
+        
+        .numbered-titled-list-item {
+            display: flex;
+            flex-basis: 100%; /* Full width on mobile */
+            max-width: 500px;
+            align-items: stretch;
+            min-height: 100px;
+            padding: 15px;
+            box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 23%);
+            border-radius: 8px;
+            box-sizing: border-box;
+            contain: layout style;
+        }
+        
+        /* Standard book-now button styling */
+        .book-now-button {
+            border-radius: 8px;
+            border-style: none;
+            box-sizing: border-box;
+            color: white !important;
+            cursor: pointer;
+            flex-shrink: 0;
+            font-size: 16px;
+            font-weight: 500;
+            height: auto;
+            padding: 12px 20px;
+            background-color: rgb(44, 85, 239);
+            text-align: center;
+            text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+            transition: all .5s;
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+            text-decoration: none;
+            display: inline-block;
+        }
+        
+        .book-now-button:hover {
+            transition-duration: .1s;
+            box-shadow: rgba(44, 85, 239, 0.5) 0 1px 30px;
+        }
+        
+        /* Responsive image container */
+        .responsive-image-container {
+            width: 100%;
+            max-width: 800px;
+            margin: 30px auto;
+            text-align: center;
+            padding: 0 10px;
+            box-sizing: border-box;
+            contain: layout;
+        }
+        
+        .responsive-image-container img {
+            width: 100%;
+            height: auto;
+            max-width: 800px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 23%);
+            display: block;
+            margin: 0 auto;
+        }
+        
+        /* Improved Contact section styling - wider on mobile */
+        .contact-section {
+            text-align: center;
+            margin: 40px auto;
+            padding: 30px 15px;
+            max-width: 100%; /* Full width on mobile */
+            width: 100%;
+            box-sizing: border-box;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            contain: layout;
+        }
+        
+        .contact-section p {
+            font-size: 1.1rem;
+            line-height: 1.5;
+            margin-bottom: 20px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .contact-button-container {
+            margin: 30px 0;
+            display: flex;
+            justify-content: center;
+        }
+        
+        /* Footer placeholder to prevent layout shift */
+        #footer-placeholder {
+            width: 100%;
+        }
+        
+        /* Media queries for larger screens */
+        @media (min-width: 768px) {
+            .page-header {
+                min-height: 350px;
+                padding: 80px 40px;
+            }
+            
+            #primary-header-title {
+                font-size: 3.5rem;
+                margin-bottom: 20px;
+            }
+            
+            #secondary-header-title {
+                font-size: 1.5rem;
+            }
+            
+            
+            .numbered-titled-list-item {
+                flex-basis: 45%;
+            }
+            
+            .section-heading {
+                font-size: 2.2rem;
+            }
+            
+            .gallery a {
+                width: 300px; /* Fixed width on larger screens */
+                height: 200px;
+            }
+            
+            .contact-section {
+                padding: 40px;
+                max-width: 900px;
+            }
+        }
+    </style>
+
+    <!-- CSS loading with proper optimization -->
+    <link rel="stylesheet" href="styles/global.css?rnd=@Function.SessionID~">
+    <link rel="stylesheet" href="styles/header.css?rnd=@Function.SessionID~">
+    <link rel="stylesheet" href="styles/text-section.css?rnd=@Function.SessionID~">
+    <link rel="stylesheet" href="styles/numbered-titled-list.css?rnd=@Function.SessionID~" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="styles/gallery-section.css?rnd=@Function.SessionID~" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="styles/pages/equipment-cab-cleaning.css?rnd=@Function.SessionID~" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="styles/libraries/lightbox.min.css" media="print" onload="this.media='all'">
+    <noscript>
+        <link rel="stylesheet" href="styles/numbered-titled-list.css?rnd=@Function.SessionID~">
+        <link rel="stylesheet" href="styles/gallery-section.css?rnd=@Function.SessionID~">
+        <link rel="stylesheet" href="styles/pages/equipment-cab-cleaning.css?rnd=@Function.SessionID~">
+        <link rel="stylesheet" href="styles/libraries/lightbox.min.css">
+    </noscript>
+    
+    <!-- Google tag (gtag.js) - deferred loading -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RXR340DBY4"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-RXR340DBY4');
+    </script>
+    
+    <!-- Defer non-critical scripts and optimize loading -->
+    <script src="scripts/libraries/lightbox-plus-jquery.min.js" defer></script>
+    <script src="https://code.jquery.com/jquery-1.9.1.min.js" defer></script>
+    <script src="https://kit.fontawesome.com/ce33f5b44a.js" crossorigin="anonymous" defer></script>
+</head>
+<body>
+    <!--Navigation bar with layout containment-->
+    <div id="nav-placeholder"></div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            fetch("nav.html")
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById("nav-placeholder").innerHTML = data;
+                                    
+                    // Manually load the nav.js script
+                    const script = document.createElement("script");
+                    script.src = "../scripts/nav.js";
+                    document.body.appendChild(script);
+                })
+                .catch(error => console.error("Error loading navbar:", error));
+        });
+    </script>
+    <!--Navigation bar-->
+
+    <!--Page-->
+    <div class="page-header" style="background-image: url('images/galleries/equipment/1.avif');">
+        <h1 id="primary-header-title">Equipment Cab Cleaning</h1>
+        <h2 id="secondary-header-title">Professional cleaning solutions for all heavy-duty equipment</h2>
+        <div id="header-buttons" class="header-buttons">
+            <button class="book-now-button" role="button"><a style="color: white; text-decoration: none;" href="contact-us.html">Contact Us</a></button>
+        </div>
+    </div>
+    
+    <h3 class="section-heading">Your Equipment Cab Deserves a Deep Clean</h3>
+    <div class="section text-section">
+        <p>Operating heavy-duty equipment means spending long hours in the cab. A clean, comfortable workspace isn't just about appearance—it directly impacts your productivity, health, and comfort.</p>
+        <p>At Magic Mobile Detailing, we specialize in professional deep-cleaning services for all types of equipment cabs—whether it's construction machinery, agricultural equipment, industrial vehicles, or any heavy-duty equipment.</p>
+        <p>Dirt, dust, mud, and debris can accumulate in hard-to-reach areas, creating an unhealthy environment and potentially affecting equipment functionality. Our thorough cleaning process removes embedded dirt, eliminates odors, and restores your equipment cab to a clean, sanitized condition.</p>
+        <p>Our mobile service brings professional cleaning directly to your worksite, farm, or business location—saving you valuable time and minimizing equipment downtime.</p>
+    </div>
+    
+    <h3 class="section-heading">Our Equipment Cab Cleaning Process</h3>
+    <div class="section numbered-titled-list">
+        <div class="numbered-titled-list-item">
+            <span class="numbered-titled-list-number">1</span>
+            <div class="numbered-titled-list-text-container">
+                <span class="numbered-titled-list-title">Complete Dust Removal</span>
+                <p class="numbered-titled-list-text">Thorough vacuuming and dust extraction from all surfaces, vents, and hard-to-reach areas.</p>
+            </div>
+        </div>
+        <div class="numbered-titled-list-item">
+            <span class="numbered-titled-list-number">2</span>
+            <div class="numbered-titled-list-text-container">
+                <span class="numbered-titled-list-title">Surface Cleaning & Treatment</span>
+                <p class="numbered-titled-list-text">Deep cleaning of all interior surfaces with appropriate products for each material type.</p>
+            </div>
+        </div>
+        <div class="numbered-titled-list-item">
+            <span class="numbered-titled-list-number">3</span>
+            <div class="numbered-titled-list-text-container">
+                <span class="numbered-titled-list-title">Sanitization</span>
+                <p class="numbered-titled-list-text">Disinfection of high-touch areas to eliminate germs and bacteria.</p>
+            </div>
+        </div>
+        <div class="numbered-titled-list-item">
+            <span class="numbered-titled-list-number">4</span>
+            <div class="numbered-titled-list-text-container">
+                <span class="numbered-titled-list-title">Stain Removal</span>
+                <p class="numbered-titled-list-text">Treatment of stubborn stains on seats, floor mats, and other surfaces.</p>
+            </div>
+        </div>
+        <div class="numbered-titled-list-item">
+            <span class="numbered-titled-list-number">5</span>
+            <div class="numbered-titled-list-text-container">
+                <span class="numbered-titled-list-title">Interior Protection</span>
+                <p class="numbered-titled-list-text">Application of protective treatments to extend the life of interior components.</p>
+            </div>
+        </div>
+        <div class="numbered-titled-list-item">
+            <span class="numbered-titled-list-number">6</span>
+            <div class="numbered-titled-list-text-container">
+                <span class="numbered-titled-list-title">Mobile Service</span>
+                <p class="numbered-titled-list-text">We come to your location—whether it's a construction site, farm, or industrial facility.</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="section">
+        <h3 class="section-heading">See the Difference</h3>
+        <div class="before-after-container">
+            <img src="images/galleries/equipment/after.webp" alt="After cleaning" width="800" height="600" fetchpriority="high">
+            <div class="before-image">
+                <img src="images/galleries/equipment/before.webp" alt="Before cleaning" width="800" height="600" fetchpriority="high">
+            </div>
+            <div class="slider"></div>
+            <div class="label before-label">BEFORE</div>
+            <div class="label after-label">AFTER</div>
+        </div>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const slider = document.querySelector('.slider');
+                const beforeImage = document.querySelector('.before-image');
+                const beforeImg = beforeImage.querySelector('img');
+                const container = document.querySelector('.before-after-container');
+                
+                let isActive = false;
+                
+                // Calculate and set the before image width initially
+                function setBeforeImageWidth() {
+                    const afterImgWidth = container.offsetWidth;
+                    beforeImg.style.width = afterImgWidth + 'px';
+                }
+                
+                // Set initial position
+                setBeforeImageWidth(); // Run immediately to prevent layout shift
+                window.addEventListener('load', setBeforeImageWidth);
+                window.addEventListener('resize', setBeforeImageWidth);
+                
+                const beforeAfterSlider = (x) => {
+                    let position = Math.max(0, Math.min(x, container.offsetWidth));
+                    beforeImage.style.width = position + 'px';
+                    slider.style.left = position + 'px';
+                }
+                
+                const pauseEvents = (e) => {
+                    e.stopPropagation();
+                    e.preventDefault();
+                    return false;
+                }
+                
+                container.addEventListener('mousedown', function(e) {
+                    isActive = true;
+                    beforeAfterSlider(e.pageX - container.getBoundingClientRect().left);
+                    pauseEvents(e);
+                });
+                
+                container.addEventListener('touchstart', function(e) {
+                    isActive = true;
+                    beforeAfterSlider(e.touches[0].pageX - container.getBoundingClientRect().left);
+                    pauseEvents(e);
+                });
+                
+                window.addEventListener('mouseup', function() {
+                    isActive = false;
+                });
+                
+                window.addEventListener('touchend', function() {
+                    isActive = false;
+                });
+                
+                window.addEventListener('mousemove', function(e) {
+                    if (!isActive) return;
+                    beforeAfterSlider(e.pageX - container.getBoundingClientRect().left);
+                });
+                
+                window.addEventListener('touchmove', function(e) {
+                    if (!isActive) return;
+                    beforeAfterSlider(e.touches[0].pageX - container.getBoundingClientRect().left);
+                });
+            });
+        </script>
+    </div>
+    
+    <div class="section">
+        <h3 class="section-heading">Why Choose Our Equipment Cab Cleaning Service</h3>
+        <div class="text-section">
+            <p><strong>Specialized Expertise:</strong> Our team understands the unique cleaning requirements for different types of equipment cabs.</p>
+            <p><strong>Improved Operator Environment:</strong> A clean cab creates a healthier, more comfortable workspace, potentially increasing productivity.</p>
+            <p><strong>Equipment Longevity:</strong> Regular cleaning helps preserve the condition of interior components and controls.</p>
+            <p><strong>Convenient Mobile Service:</strong> We bring our professional cleaning equipment directly to your location.</p>
+            <p><strong>Custom Solutions:</strong> Every equipment cab is different—we tailor our approach to your specific needs.</p>
+        </div>
+        <div class="responsive-image-container">
+            <img src="images/galleries/equipment/4.webp" alt="Equipment cleaning in progress" width="800" height="600" loading="lazy">
+        </div>
+    </div>
+    
+    <div class="section gallery-section">
+        <h3 class="section-heading">Check Out Our Work</h3>
+        <div class="gallery">
+            <!-- Using srcset with properly sized images to dramatically reduce file size -->
+            <a href="images/galleries/equipment/6.JPEG" data-lightbox="gallery">
+                <img alt="Clean equipment cab" src="images/galleries/equipment/6.JPEG" srcset="images/galleries/equipment/6-thumb.webp 300w, images/galleries/equipment/6.webp 800w" sizes="(max-width: 767px) 95vw, 300px" width="300" height="200" loading="lazy">
+            </a>
+            <a href="images/galleries/equipment/7.JPEG" data-lightbox="gallery">
+                <img alt="Clean equipment cab" src="images/galleries/equipment/7.JPEG" srcset="images/galleries/equipment/7-thumb.webp 300w, images/galleries/equipment/7.webp 800w" sizes="(max-width: 767px) 95vw, 300px" width="300" height="200" loading="lazy">
+            </a>
+            <a href="images/galleries/equipment/8.JPEG" data-lightbox="gallery">
+                <img alt="Clean equipment cab" src="images/galleries/equipment/8.JPEG" srcset="images/galleries/equipment/8-thumb.webp 300w, images/galleries/equipment/8.webp 800w" sizes="(max-width: 767px) 95vw, 300px" width="300" height="200" loading="lazy">
+            </a>
+            <a href="images/galleries/equipment/9.JPEG" data-lightbox="gallery">
+                <img alt="Clean equipment cab" src="images/galleries/equipment/9.JPEG" srcset="images/galleries/equipment/9-thumb.webp 300w, images/galleries/equipment/9.webp 800w" sizes="(max-width: 767px) 95vw, 300px" width="300" height="200" loading="lazy">
+            </a>
+            <a href="images/galleries/equipment/10.JPEG" data-lightbox="gallery">
+                <img alt="Clean equipment cab" src="images/galleries/equipment/10.JPEG" srcset="images/galleries/equipment/10-thumb.webp 300w, images/galleries/equipment/10.webp 800w" sizes="(max-width: 767px) 95vw, 300px" width="300" height="200" loading="lazy">
+            </a>
+            <a href="images/galleries/equipment/11.JPEG" data-lightbox="gallery">
+                <img alt="Clean equipment cab" src="images/galleries/equipment/11.JPEG" srcset="images/galleries/equipment/11-thumb.webp 300w, images/galleries/equipment/11.webp 800w" sizes="(max-width: 767px) 95vw, 300px" width="300" height="200" loading="lazy">
+            </a>
+            <a href="images/galleries/equipment/12.JPEG" data-lightbox="gallery">
+                <img alt="Clean equipment cab" src="images/galleries/equipment/12.JPEG" srcset="images/galleries/equipment/12-thumb.webp 300w, images/galleries/equipment/12.webp 800w" sizes="(max-width: 767px) 95vw, 300px" width="300" height="200" loading="lazy">
+            </a>
+            <a href="images/galleries/equipment/13.JPEG" data-lightbox="gallery">
+                <img alt="Clean equipment cab" src="images/galleries/equipment/13.JPEG" srcset="images/galleries/equipment/13-thumb.webp 300w, images/galleries/equipment/13.webp 800w" sizes="(max-width: 767px) 95vw, 300px" width="300" height="200" loading="lazy">
+            </a>
+            <a href="images/galleries/equipment/14.JPEG" data-lightbox="gallery">
+                <img alt="Clean equipment cab" src="images/galleries/equipment/14.JPEG" srcset="images/galleries/equipment/14-thumb.webp 300w, images/galleries/equipment/14.webp 800w" sizes="(max-width: 767px) 95vw, 300px" width="300" height="200" loading="lazy">
+            </a>
+            <a href="images/galleries/equipment/15.JPEG" data-lightbox="gallery">
+                <img alt="Clean equipment cab" src="images/galleries/equipment/15.JPEG" srcset="images/galleries/equipment/15-thumb.webp 300w, images/galleries/equipment/15.webp 800w" sizes="(max-width: 767px) 95vw, 300px" width="300" height="200" loading="lazy">
+            </a>
+        </div>
+    </div>
+    
+    <div class="section">
+        <h3 class="section-heading">Contact Us for Equipment Cab Cleaning</h3>
+        <div class="contact-section">
+            <p>Ready to transform your equipment cab environment? Contact us for a customized quote tailored to your specific needs.</p>
+            <p>We service all types of heavy-duty equipment in Saskatoon and surrounding areas.</p>
+            <div class="contact-button-container">
+                <button class="book-now-button" role="button"><a style="color: white; text-decoration: none;" href="contact-us.html">Contact Us For Pricing</a></button>
+            </div>
+        </div>
+    </div>
+    <!--Page-->
+</body>
+<!--Footer-->
+<footer>
+    <div id="footer-placeholder"></div>
+    <script>
+        // Use addEventListener for better performance
+        document.addEventListener('DOMContentLoaded', function() {
+            fetch("footer.html")
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById("footer-placeholder").innerHTML = data;
+                })
+                .catch(error => console.error("Error loading footer:", error));
+        });
+    </script>
+</footer>
+<!--Footer-->
+</html>
