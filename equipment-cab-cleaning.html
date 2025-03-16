@@ -4,7 +4,7 @@
     <!-- Preload critical resources -->
     <link rel="preload" href="nav.html" as="fetch" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preload" href="images/galleries/equipment/1.avif" as="image" type="image/avif" fetchpriority="high">
+    <link rel="preload" href="images/galleries/equipment/1.2.avif" as="image" type="image/avif" fetchpriority="high">
     
     <title>Equipment Cab Cleaning Saskatoon | Magic Mobile Detailing</title>
     <meta name="description" content="Professional equipment cab cleaning services for construction, agricultural, and industrial machinery. We come to you and offer deep cleaning solutions for all heavy-duty equipment cabs in Saskatoon & Surrounding Areas.">
@@ -15,7 +15,7 @@
     <style>
         /* Styling for placeholder to avoid high CLS score (shifting page header images after nav loads) */
         #nav-placeholder {
-            min-height: 1px; 
+            height: 1px; 
             width: 100%;
             display: block;
         }
@@ -115,12 +115,12 @@
         .before-after-container {
             position: relative;
             width: 100%;
-            max-width: 800px;
+            max-width: 600px; 
             margin: 40px auto;
             overflow: hidden;
             border-radius: 5px;
             box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 23%);
-            aspect-ratio: 4/3; /* Fixed aspect ratio to prevent layout shift */
+            aspect-ratio: 3/4; 
             contain: layout size;
         }
         
@@ -359,7 +359,6 @@
     <link rel="stylesheet" href="styles/text-section.css?rnd=@Function.SessionID~">
     <link rel="stylesheet" href="styles/numbered-titled-list.css?rnd=@Function.SessionID~" media="print" onload="this.media='all'">
     <link rel="stylesheet" href="styles/gallery-section.css?rnd=@Function.SessionID~" media="print" onload="this.media='all'">
-    <link rel="stylesheet" href="styles/pages/equipment-cab-cleaning.css?rnd=@Function.SessionID~" media="print" onload="this.media='all'">
     <link rel="stylesheet" href="styles/libraries/lightbox.min.css" media="print" onload="this.media='all'">
     <noscript>
         <link rel="stylesheet" href="styles/numbered-titled-list.css?rnd=@Function.SessionID~">
@@ -403,7 +402,7 @@
     <!--Navigation bar-->
 
     <!--Page-->
-    <div class="page-header" style="background-image: url('images/galleries/equipment/1.avif');">
+    <div class="page-header" style="background-image: url('images/galleries/equipment/1.2.avif');">
         <h1 id="primary-header-title">Equipment Cab Cleaning</h1>
         <h2 id="secondary-header-title">Professional cleaning solutions for all heavy-duty equipment</h2>
         <div id="header-buttons" class="header-buttons">
@@ -468,9 +467,9 @@
     <div class="section">
         <h3 class="section-heading">See the Difference</h3>
         <div class="before-after-container">
-            <img src="images/galleries/equipment/after.webp" alt="After cleaning" width="800" height="600" fetchpriority="high">
+            <img src="images/galleries/equipment/after.webp" alt="After cleaning" width="800" height="1200" fetchpriority="high">
             <div class="before-image">
-                <img src="images/galleries/equipment/before.webp" alt="Before cleaning" width="800" height="600" fetchpriority="high">
+                <img src="images/galleries/equipment/before.webp" alt="Before cleaning" width="800" height="1200" fetchpriority="high">
             </div>
             <div class="slider"></div>
             <div class="label before-label">BEFORE</div>
