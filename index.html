@@ -9,6 +9,7 @@
     <meta name="description" content="Looking to have your vehicle detailed in Saskatoon? We come to you and offer professional auto detailing services at your home or business. Book Online Now!">
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
     
+
     <script src="https://kit.fontawesome.com/ce33f5b44a.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
     <link rel="stylesheet" href="styles/global.css?rnd=@Function.SessionID~">    
@@ -31,6 +32,7 @@
     </script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
+        @import url(https://fonts.googleapis.com/css?family=Josefin+Sans:600);
         /* Styling for placeholder to avoid high CLS score, (shifting page header images after nav loads) */
         #nav-placeholder {
             min-height: 1px; /* Adjust based on navbar height */
@@ -259,6 +261,20 @@
             max-width: 40%;
         }
 
+        .to-you-heading {
+            margin-top: 110px;
+            font-size: 3em;
+            font-family: 'Josefin Sans';
+        }
+        
+        .to-you-section {
+            padding-bottom: 30px;
+        }
+
+        .top-header-buttons {
+            visibility: hidden;
+        }
+
         @media only screen and (max-width: 1020px) {
             .contact-container {
                 display: flex;
@@ -330,12 +346,21 @@
                 align-items: center;
                 justify-content: center;
             }
+
+            .top-header-buttons {
+                visibility: visible;
+            }
         }
 
         @media only screen and (max-width: 671px) {
-            .full-detail-section {
+            /* .full-detail-section {
                 padding-top: 200px;
                 padding-bottom: 70px;
+            } */
+
+            .to-you-heading {
+                margin-top: 200px;
+                font-size: 2em;
             }
         }
 
@@ -413,8 +438,8 @@
     <div id="page-header" class="page-header">
         <!-- <img id="magic-logo" style="display: none;" src="images/Logo3Magic-small.webp">
         <h1 id="primary-header-title" class="small-primary-header-title"></h1> -->
-        <div id="header-buttons" class="header-buttons">
-            <button class="book-now-button" role="button" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/d/y2j-css-xms?hide_gdpr_banner=1'});return false;">Book Now</button>
+        <div id="header-buttons" class="header-buttons top-header-buttons">
+            <button class="primary-button book-now-button" role="button" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/d/y2j-css-xms?hide_gdpr_banner=1'});return false;">Book Now</button>
             <!-- <button class="book-now-button" role="button"><a style="color: white;" href="contact-us.html">Contact Us</a></button> -->
         </div>   
     </div>
@@ -442,6 +467,40 @@
             <p>Shop quality auto detailing from the comfort of your own home</p>
         </div>
     </div> -->
+    <h3 class="section-heading to-you-heading">WE COME TO YOU</h3>
+    <div class="section left-image-section to-you-section">
+        <div class="left-image-section-image-container">
+            <img class="van-image" loading="lazy" alt="washing floor mat" src="images/floor-mat-wash-small.webp">
+        </div>
+        <div class="van-text-container left-image-section-text-container">
+            <div class="left-image-section-text">
+                <p>We bring our own power, water, and all the equipment we need to give your vehicle a full inside and out detail right on the spot.</p>
+            </div>
+            <div class="left-image-section-text">
+                <p>We provide mobile detailing services in Saskatoon and its surrounding areas. Whether it is your personal vehicle, boat or motorhome, company fleet or heavy-duty equipment. Our mobile detailing service is the most convenient solution to maintaining the appearance of your vehicle. These are the areas we cover:</p>
+            </div>
+            <ul class="service-locations-list bullet-point-list">
+                <li class="bullet-point-list-item">
+                    <a href="#"><i class="bullet-point-icon fa-solid fa-chevron-right"></i>Saskatoon</a>
+                </li>
+                <li class="bullet-point-list-item">
+                    <a href="#"><i class="bullet-point-icon fa-solid fa-chevron-right"></i>Warman</a>
+                </li>
+                <li class="bullet-point-list-item">
+                    <a href="#"><i class="bullet-point-icon fa-solid fa-chevron-right"></i>Martensville</a>
+                </li>
+                <li class="bullet-point-list-item">
+                    <a href="#"><i class="bullet-point-icon fa-solid fa-chevron-right"></i>Dundurn</a>
+                </li>
+            </ul>
+            <div class="left-image-section-text">
+                <div id="header-buttons" class="header-buttons">
+                    <button class="primary-button" role="button"><a style="color: white;" href="contact-us.html">Contact Us</a></button>
+                    <button class="book-now-button" role="button" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/d/y2j-css-xms?hide_gdpr_banner=1'});return false;">Book Now</button>
+                </div>   
+            </div>
+        </div>
+    </div>
     <div class="full-detail-section section left-image-section">
         <!-- <div class="left-image-section-image-container">
             <img class="full-interior-detail-image" src="images/wheel-cleaning.jpg">
@@ -465,7 +524,7 @@
                 <button class="book-now-button" role="button" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/d/ckgp-cyn-f8d?hide_gdpr_banner=1'});return false;">Book Now</button>
             </div>
         </div>
-        <p class="full-detail-heading">Your Car, Detailed Wherever You Are</p>
+        <p class="full-detail-heading">Transform your vehicle with a Full Detail</p>
     </div>
 
     <h3 class="section-heading">The easiest way to keep your vehicle looking it's best</h3>
@@ -512,34 +571,6 @@
             <h3 class="box-list-item-title">Engine Cleaning</h3>
             <p class="box-list-item-description">Refresh your engine bay and restore it to a dust and grease free condition.</p>
             <button class="box-list-item-button primary-button" role="button" onclick="location.href='/engine-cleaning-saskatoon.html'">Read More</button>
-        </div>
-    </div>
-    <h3 class="section-heading">We Come to You</h3>
-    <div class="section left-image-section">
-        <div class="left-image-section-image-container">
-            <img class="van-image" loading="lazy" alt="washing floor mat" src="images/floor-mat-wash-small.webp">
-        </div>
-        <div class="van-text-container left-image-section-text-container">
-            <div class="left-image-section-text">
-                <p>We bring our own power, water, and all the equipment we need to give your vehicle a full inside and out detail right on the spot.</p>
-            </div>
-            <div class="left-image-section-text">
-                <p>We provide detailing services in Saskatoon and its surrounding areas. However, there may be certain requirements or restrictions based on your location. Nevertheless, we will make every effort to accommodate you in our schedule. These are the areas we cover:</p>
-            </div>
-            <ul class="service-locations-list bullet-point-list">
-                <li class="bullet-point-list-item">
-                    <a href="#"><i class="bullet-point-icon fa-solid fa-chevron-right"></i>Saskatoon</a>
-                </li>
-                <li class="bullet-point-list-item">
-                    <a href="#"><i class="bullet-point-icon fa-solid fa-chevron-right"></i>Warman</a>
-                </li>
-                <li class="bullet-point-list-item">
-                    <a href="#"><i class="bullet-point-icon fa-solid fa-chevron-right"></i>Martensville</a>
-                </li>
-                <li class="bullet-point-list-item">
-                    <a href="#"><i class="bullet-point-icon fa-solid fa-chevron-right"></i>Dundurn</a>
-                </li>
-            </ul>
         </div>
     </div>
     <h3 class="section-heading">Hassle Free Experience to All Our Customers</h3>

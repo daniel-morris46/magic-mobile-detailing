@@ -34,9 +34,10 @@
         /* contact-us.css */
         .page-header {
             min-height: 550px;
-            background-image: url('/images/galleries/hand-car-wash/12.webp');
+            background-image: url('/images/cover-6-small.webp');
             background-position: center;
             background-size: cover;
+            background-position-y: 20%;
         }
 
         .contact-us-form {
@@ -75,6 +76,95 @@
         textarea {
             font-family: sans-serif;
         }
+
+        
+        .contact-wrapper {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            margin-top: 200px;
+        }
+
+        .contact-container {
+            width: min(80%, 800px);
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: #d6d6d6;
+            border-radius: 10px;
+            flex-wrap: wrap;
+            padding: 10px 30px;
+            position: absolute;
+            top: 600px;
+            box-shadow: 5px 5px 10px #000;
+        }
+
+        .phone-container,
+        .working-hours-container {
+            height: 100px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            width: 225px;
+        }
+
+        .phone-icon {
+            font-size: 2.5em;
+            color: #2c55ef;
+        }
+
+        .location-text-container,
+        .phone-text-container,
+        .working-hours-text-container {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        .phone-title,
+        .working-hours-title {
+            font-size: 1.4em;
+            display: block;
+        }
+
+        .phone-text,
+        .working-hours-text {
+            display: block;
+        }
+
+        .location-icon,
+        .top-text-heading,
+        .working-hours-icon {
+            font-size: 2.5em;
+        }
+
+        .location-container {
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .location-title {
+            display: block;
+            font-size: 1.4em;
+        }
+
+        .location-text {
+            display: block;
+            font-size: 1em;
+        }
+
+        @media only screen and (max-width: 654px) {
+
+            .contact-wrapper {
+                margin-top: 320px;
+            }
+
+        }
+
     </style>
 </head>
 <body>
@@ -102,9 +192,28 @@
         <h1 id="primary-header-title">Get In Touch</h1>
         <h2 id="secondary-header-title">We'd love to hear from you</h2> 
     </div>
+    <div class="contact-wrapper">
+        <div class="contact-container">
+            <div class="phone-container">
+                <a href="tel:3062028177" aria-label="Call Magic Mobile Detailing"><i class="phone-icon fa-solid fa-phone"></i></a>
+                <div class="phone-text-container">
+                    <span class="phone-title">Call / Text</span>
+                    <span class="phone-text">306-202-8177</span>
+                </div>
+            </div>
+            <div class="working-hours-container">
+                <i class="working-hours-icon fa-regular fa-clock"></i>
+                <div class="working-hours-text-container">
+                    <span class="working-hours-title">Working Hours</span>
+                    <span class="working-hours-text">Mon - Sun: 8 AM - 7 PM</span>
+                </div>
+            </div>
+        </div>
+    </div>
     <h3 class="section-heading">Let us know how we can help</h3>
     <div class="section">
         <form class="contact-us-form" action="https://formsubmit.co/072486d9539c177154c69cf61b59335d" method="post" enctype="multipart/form-data">
+            <input type="hidden" name="_captcha" value="false">
             <span class="form-label">Name: <i class="required-icon">*</i></span>        
             <input type="text" name="name" autocomplete="on">                                            
             <span class="form-label">Email: <i class="required-icon">*</i></span>     
@@ -113,7 +222,7 @@
             <input type="file" multiple="multiple" name="attachment" accept="image/png, image/jpeg"/>
             <span class="form-label">How can we help? <i class="required-icon">*</i></span>
             <textarea name="message"></textarea>                                        
-            <input type="hidden" name="_next" value="https://magicdetailing.ca/thank-you"/>   
+            <input type="hidden" name="_next" value="https://magicdetailing.ca/thank-you.html"/>   
             <input type="hidden" name="_autoresponse" value="Thank you for reaching out to Magic Mobile Detailing! We have received your message and will get back to you shortly.">
             <input class="primary-button" type="submit" value="Submit" />
         </form>
