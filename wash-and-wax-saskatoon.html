@@ -30,6 +30,7 @@
 
 <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
 <script src="https://kit.fontawesome.com/ce33f5b44a.js" crossorigin="anonymous"></script>
+<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
@@ -56,6 +57,11 @@
     <div class="page-header">
         <h1 id="primary-header-title">Wash & Wax</h1>
         <h2 id="secondary-header-title">Give your ride a stunning shine</h2> 
+        <div id="header-buttons" class="header-buttons">
+            <button class="book-now-button" role="button" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/d/cm34-ctx-77t?hide_gdpr_banner=1'});return false;">Book Now</button>
+            <!-- <button class="book-now-button" role="button"><a style="color: white;" href="contact-us.html">Contact Us</a></button> -->
+        </div>   
+
     </div>
     <h3 class="section-heading">A simple service to give your vehicle a glossy look with a layer of protection</h3>
     <div class="section text-section">
@@ -99,17 +105,20 @@
             <div id="sm-price-box" class="price-box-lg">
                 <span class="price-size">Small</span>
                 <span class="price-example">(Coupe / Sedan)</span>
-                <span class="price-range">$80</span>
+                <span class="price-range">$140</span>
+                <button class="primary-button" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/magicdetailing/sm-wash-wax?hide_gdpr_banner=1'});return false;">Book Now</button>
             </div>
             <div id="md-price-box" class="price-box-lg selected-price-box">
                 <span class="price-size">Medium</span>
-                <span class="price-example">(Mid Size SUV / Crossover)</span>
-                <span class="price-range">$100</span>
+                <span class="price-example">(Mid Size SUV / Crossover / Minivan)</span>
+                <span class="price-range">$160</span>
+                <button class="primary-button" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/magicdetailing/md-wash-wax?hide_gdpr_banner=1'});return false;">Book Now</button>
             </div>
             <div id="lg-price-box" class="price-box-lg">
                 <span class="price-size">Large</span>
-                <span class="price-example">(Large SUV / Minivan / Truck)</span>
-                <span class="price-range">$120</span>
+                <span class="price-example">(Large SUV / Truck)</span>
+                <span class="price-range">$180</span>
+                <button class="primary-button" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/magicdetailing/md-wash-wax?hide_gdpr_banner=1'});return false;">Book Now</button>
             </div>
         </div>
     </div>

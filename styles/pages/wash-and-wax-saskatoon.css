@@ -1,9 +1,13 @@
 .page-header {
-    background-image: url('/images/galleries/hand-car-wash/22.jpeg');
+    background-image: url('/images/cover-7-small.webp');
     background-position: center;
     background-size: cover;
 }
 
 .page-header {
     background-position-y: 55%;
+}
+
+.header-buttons {
+    padding-top: 30px;
 }
